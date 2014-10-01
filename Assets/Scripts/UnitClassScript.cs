@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class UnitClassScript : MonoBehaviour
 {
 
-	public string className;
+	public string className = "null";
 	public int unitType;
 
 	public int HP, maxHP;
@@ -13,7 +14,6 @@ public class UnitClassScript : MonoBehaviour
 	public int sightDistance;
 
 	public int favoriteTarget;
-	public int currentTarget;
 
 	// Use this for initialization
 	void Start ()

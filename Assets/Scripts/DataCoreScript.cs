@@ -4,121 +4,194 @@ using System.Collections.Generic;
 
 public class DataCoreScript : MonoBehaviour
 {
+	/*List of Game Objects*/
+	public List<UnitScript> myUnits;
+	public GameObject mapObject;
 
-	//GAME OBJECTS
-	private Camera mainCamera;
-	public List<UnitClassScript> myUnits;
+	/*Selecting Units variables*/
+	public GameObject	selectedUnit		= null;
+	public UnitScript	selectedUnitScript	= null;
+	public bool			isUnitSelected		= false;
+	private	RaycastHit	hit;
+	
+	public enum ClassType{Unit1 = 0, Unit2 = 1, Unit3 = 2};
+	ClassType spawnClassType;
+	
+	/*World and map data*/
+	public static int	mapWidth		= 40;		//Num of tiles wide
+	public static int	mapHeight		= 40;
+	public static float	tileWidth		= 1.0f;	//Width of a single tile
+	public static float	tileHeight		= 1.0f;
+	public static float	actualMapWidth	= 0.0f;		//Size of map
+	public static float	actualMapHeight = 0.0f;
+	private Vector2 worldUp = new Vector2(1,1);
 
-	//Unit Selecting Variables
-	public GameObject selectedUnit = null;
-	public UnitClassScript selectedUnitScript = null;
-	public bool isUnitSelected = false;
+	/*Debugging*/
+	private string	debugString		= null;
 
-	//For Debugging
-	private string debugString = null;
 
-	// Use this for initialization
 	void Start ()
 	{
-		mainCamera = Camera.main;
+		worldUp.Normalize();
+		actualMapWidth		= mapWidth	* tileWidth;
+		actualMapHeight		= mapHeight * tileHeight;
 	}
-	
-	// Update is called once per frame
+
+	void OnGUI ()
+	{
+		// Make a background box
+		GUI.Box(new Rect(10,10,150,135), "Unit Selection");
+		//Unit Type Buttons
+		if(GUI.Button(new Rect(20,40,100,20), "Unit 1"))
+		{
+			spawnClassType = ClassType.Unit1;
+		}
+		if(GUI.Button(new Rect(20,65,100,20), "Unit 2"))
+		{
+			spawnClassType = ClassType.Unit2;
+		}
+		if(GUI.Button(new Rect(20,90,100,20), "Unit 3"))
+		{
+			spawnClassType = ClassType.Unit3;
+		}
+		if(GUI.Button(new Rect(20,120,120,20), "Special Command"))
+		{
+
+		}
+	}
+
+
 	void Update ()
 	{
-		debugString = null;
-		/*IF LEFT MOUSE BUTTON DOWN*/
-		if (Input.GetMouseButtonDown(0))
+		/* IF THE LEFT MOUSE BUTTON IS DOWN */
+		if (Input.GetMouseButtonDown (0))
 		{
-			debugString += "LMB Clicked";
-			/*CREATE RAY FROM MOUSE TO WORLD*/
-			RaycastHit hit;
-			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-			Debug.DrawRay (ray.origin, ray.direction * 5.0f, Color.yellow);
+			/* CREATE A RAY FROM MOUSE TO WORLD */
+			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+			Debug.DrawRay (ray.origin, ray.direction * 35.0f, Color.yellow);
 
-			/*DETERMINE IF THE RAY HITS ANYTHING*/
-			if (Physics.Raycast (ray, out hit, 2.0f))
+			/* DOES IT HIT ANYTHING IN THE SCENE? */
+			if (Physics.Raycast (ray, out hit))
 			{
-				debugString += " & Ray hit object:";
-				debugString += hit.collider.gameObject.name;	
-				/*IF NO PAWN IS SELECTED*/
+				/* IF NO UNIT IS SELECTED */
 				if (!isUnitSelected)
 				{
-					/*	SELECT THE PAWN HIT	*/
-					if (hit.collider.gameObject.CompareTag("unit"))
-					{
-							selectedUnit		= hit.transform.parent.gameObject;
-//							//selectedUnitScript	= selectedUnit.GetComponent(UnitClassScript);
-//							//selectedPawnScript.select();
-							isUnitSelected		= true;
-					}
-
+					debugString += "_";
+						/* SELECT THE RAY-HIT UNIT */
+						if (hit.transform.gameObject.name == "unit")
+						{
+								debugString += "Unit Selected";
+								selectedUnit = hit.transform.gameObject;
+								selectedUnitScript = selectedUnit.GetComponent<UnitScript>();
+								selectedUnitScript.Select();
+								isUnitSelected = true;
+						}
+	
+						//Instance a new troop if one is available
+//						if (hit.transform.gameObject.name == "mapTest" && !isUnitSelected)
+//						{
+//							GameObject unit = Instantiate(Resources.Load("unit")) as GameObject;
+//							unit.GetComponent<UnitScript>().pos = _WorldToMapPos(hit.point);
+//						}
 				}
-				/*IF A PAWN IS ALREADY SELECTED*/
+
+				/* IF A UNIT IS ALREADY SELECTED */
 				if (isUnitSelected)
 				{
-					/*	SELECT NEW PAWN IF NEW PAWN HIT	*/
-					if (hit.collider.gameObject.CompareTag("unit") && hit.collider.gameObject != selectedPawn)
+					//select a new unit if a new unit is hit
+					if (hit.transform.gameObject.name == "unit" && hit.transform.gameObject != selectedUnit)
 					{
-							debugString			+= " & DESELECT CURRENT PAWN & SELECT NEW PAWN";
-							//selectedUnitScript.deselect();									//deselect current pawn
-							selectedUnit		= hit.transform.parent.gameObject;			//set new pawn into variables
-							//selectedUnitScript	= selectedPawn.GetComponent(pawnScript);	//select new pawn's script
-							//selectedUnitScript.select();									//call new pawn's select function
+							debugString += "New Unit selected";
+							selectedUnitScript.Deselect();									//deselect current pawn
+							selectedUnit = hit.transform.gameObject;
+							selectedUnitScript = selectedUnit.GetComponent<UnitScript>();
+							selectedUnitScript.Select();									//call new pawn's select function
 					}
-					
-//					/*	SETS WAYPOINT IF GROUND IS SELECTED	*/
-//					if (hit.transform.gameObject.name == "ground")
-//					{
-//						debugString								+= " & MOVE PAWN HERE";
-//						selectedPawnScript.moveTargetSelected	= true;
-//						selectedPawnScript.moveTarget.x			= hit.point.x;
-//						selectedPawnScript.moveTarget.z			= hit.point.z;
-//					}
-//					
-//					/* IF THE USER SELECTS AN ENEMY PAWN */
-//					if (hit.transform.parent.gameObject.CompareTag("enemyPawn"))
-//					{
-//						debugString								+= " & SET THIS PAWN AS TARGET";
-//						selectedPawnScript.actionTargetSelected	= true;
-//						selectedPawnScript.actionTarget			= hit.transform.parent.gameObject;
-//						selectedPawnScript.moveTargetSelected	= true;
-//						selectedPawnScript.moveTarget.x			= hit.point.x;
-//						selectedPawnScript.moveTarget.z			= hit.point.z;
-//					}
-				}
+
+					/*	SETS WAYPOINT IF GROUND IS SELECTED	*/
+					if (hit.transform.gameObject.name == "mapTest")
+					{
+							debugString += "Waypoint set";
+							//selectedPawnScript.moveTargetSelected	= true;
+							//selectedPawnScript.moveTarget.x			= hit.point.x;
+							//selectedPawnScript.moveTarget.z			= hit.point.z;
+					}
+
+				}//end if unit was selected
 			}
-		}
+		}//End mouse click
+
+		/*	IF RIGHT MOUSE BUTTON IS PRESSED	*/
+		if (Input.GetMouseButtonDown(1))
+		{
+			if (isUnitSelected)
+			{
+				debugString				= "Deselected";
+				selectedUnitScript.Deselect();
+				selectedUnit			= null;
+				selectedUnitScript		= null;
+				isUnitSelected			= false;
+			}
+			else if (!isUnitSelected)
+			{
+				debugString += "Menu/Query";
 			}
 		}
 
-		if (debugString != null)Debug.Log (debugString);
+		/*	PRINT DEBUG LOG IF DEBUGSTRING HAS SOMETHING IN IT.	*/
+		if (debugString != null)
+		{
+			Debug.Log(debugString);
+			Vector2 mapPos = _WorldToMapPos(hit.point);
+			Debug.Log("Pos: (" + mapPos.x + ", " + mapPos.y + ")");
+			debugString = null;
+		}
+
+	}//END UPDATE
+
+	//OTHER FUNCTIONS
+//public static class WorldMap
+
+	public static Vector3 _MapToWorldPos (Vector2 mapPos, int objType)
+	{
+		Vector3 worldPos;
+		worldPos.x		=	0.0f - (actualMapWidth/2.0f);
+		worldPos.x		+=	(mapPos.x * tileWidth);
+		worldPos.x		+=	(tileWidth/2.0f);
+		worldPos.y		=	0.0f - (actualMapHeight/2.0f);
+		worldPos.y		+=	(mapPos.y * tileHeight);
+		worldPos.y		+=	(tileHeight/2.0f);
+		worldPos.z		=	-0.05f;
+		
+		return worldPos;
 	}
+
+	public static Vector2 _WorldToMapPos (Vector3 worldPos)
+	{
+		Vector2 mapPos;
+		float secondTermX = (tileWidth + actualMapWidth)/2.0f;
+		mapPos.x		=	-1.0f * Mathf.Floor(Mathf.Abs((worldPos.x - secondTermX)/tileWidth));
+		float secondTermY = (tileHeight + actualMapHeight)/2.0f;
+		mapPos.y		=	-1.0f * Mathf.Floor(Mathf.Abs((worldPos.y - secondTermY)/tileHeight));
+		
+		return mapPos;
+	}
+
 }
 
 
 
-//	
-//	/*	IF RIGHT MOUSE BUTTON IS PRESSED	*/
-//	if (Input.GetMouseButtonDown(1))
-//	{
-//		if (isPawnSelected == true)
-//		{
-//			debugString				= "DE-SELECT &";
-//			selectedPawnScript.deselect();
-//			selectedPawn			= null;
-//			selectedPawnScript		= null;
-//			isPawnSelected			= false;
-//		}
-//		if (isPawnSelected == false)
-//		{
-//			debugString += " BRING UP MENU/QUERY";
-//		}
-//	}
-//	
-//	/*	PRINT DEBUG LOG IF DEBUGSTRING HAS SOMETHING IN IT.	*/
-//	if (debugString != null)
-//	{
-//		Debug.Log(debugString);
-//	}
-//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
