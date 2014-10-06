@@ -3,6 +3,7 @@ using System.Collections;
 
 public class UnitScript : MonoBehaviour
 {
+
 	public Transform gameObject;
 	public Vector2 pos;
 	public Vector2 moveTarget;
@@ -18,21 +19,25 @@ public class UnitScript : MonoBehaviour
 
 	public bool isSelected = false;
 
+	public enum State{idle, move, attack};
+
 	// Use this for initialization
-	void Awake ()//Start
+	void Awake ()
 	{
-		//moveTarget = pos;
 		gameObject = this.transform;
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-//		if(moveTarget != pos)
-//		{
-//			pos = moveTarget;
-//		}
-		gameObject.position = DataCoreScript._MapToWorldPos(pos, 0);
+		//movePawn();
+	}
+
+	public void Initialize (int unitType, Vector2 mapPos)
+	{
+		this.unitType = unitType;
+		this.pos = mapPos;
+		gameObject.position = MapScript._MapToWorldPos(mapPos);
 	}
 
 	public void Select()
@@ -48,12 +53,22 @@ public class UnitScript : MonoBehaviour
 	
 	public void movePawn()
 	{
-
+		if(this.pos != this.moveTarget)
+		{
+			//Move unit to move-target
+			Vector2 unitToTarget = this.moveTarget - this.pos;
+			this.gameObject.transform.Translate(unitToTarget * Time.deltaTime);
+		}
 	}
 	
 	/* SOME ATTACKING FUNCTION FOR NOW */
 	public void attack ()
 	{
 
+	}
+
+	public static GameObject Instance ()
+	{
+		return Instantiate(Resources.Load("unit")) as GameObject;
 	}
 }

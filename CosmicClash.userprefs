@@ -1,11 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\DataCoreScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\DataCoreScript.cs" Line="70" Column="5" />
-      <File FileName="Assets\Scripts\UnitClassScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CameraScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\oldScripts\OldGameLogicScript.js" Line="45" Column="22" />
+      <File FileName="Assets\Scripts\MapScript.cs" Line="43" Column="54" />
+      <File FileName="Assets\Scripts\UnitScript.cs" Line="71" Column="3" />
+      <File FileName="Assets\Scripts\DataCoreScript.cs" Line="66" Column="57" />
+      <File FileName="Assets\Scripts\UserScript.cs" Line="20" Column="9" />
+      <File FileName="Assets\Scripts\FortificationScript.cs" Line="5" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
