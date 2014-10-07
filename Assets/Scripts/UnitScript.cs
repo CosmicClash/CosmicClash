@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class UnitScript : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class UnitScript : MonoBehaviour
 	public Transform gameObject;
 	public Vector2 pos;
 	public Vector2 moveTarget;
-	public FortificationScript attackTarget;
+	public GameObject attackTarget;
 	public int movementSpeed;
 	public int sightDistance;
 	public int favoriteTarget;
@@ -23,7 +24,14 @@ public class UnitScript : MonoBehaviour
 	}
 	void Update ()
 	{
+		//STATES
+		//Idling
 
+		//Find Target
+
+		//Move to Target
+
+		//Attack Target
 	}
 	public void Initialize (DataCoreScript.UnitClass unitType, Vector2 mapPos)
 	{
@@ -66,7 +74,28 @@ public class UnitScript : MonoBehaviour
 		isSelected = false;
 	}
 	
-	
+	public void FindTarget (List<GameObject> potentialTargets)
+	{
+		//Loop through potential targets and return the closest
+		List<GameObject> potTargs = potentialTargets;
+		if(potTargs.Count > 0)
+		{
+			int closestTarg = 0;
+			float smallestDist = (float)MapScript.mapWidth;
+			for(int i = 0; i < potTargs.Count; i++)
+			{
+				Vector2 hereToThere = new Vector2 (this.gameObject.transform.position.x - potTargs[i].transform.position.x,
+				                                   this.gameObject.transform.position.y - potTargs[i].transform.position.y);
+				float dist = hereToThere.magnitude;
+				if(dist < smallestDist)
+				{
+					smallestDist = dist;
+					closestTarg = i;
+				}
+			}
+			this.attackTarget = potTargs [closestTarg];
+		}
+	}
 	public void movePawn()
 	{
 		if(this.pos != this.moveTarget)
@@ -77,7 +106,7 @@ public class UnitScript : MonoBehaviour
 		}
 	}
 	/* SOME ATTACKING FUNCTION FOR NOW */
-	public void attack ()
+	public void attack (GameObject target)
 	{
 
 	}
