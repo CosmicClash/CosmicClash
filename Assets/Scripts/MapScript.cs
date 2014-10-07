@@ -7,18 +7,13 @@ public class MapScript : MonoBehaviour
 
 	public static int	mapWidth		= 40;		//Num of tiles wide
 	public static int	mapHeight		= 40;
-
 	public static float	tileWidth		= 1.0f;		//Width of a single tile
 	public static float	tileHeight		= 1.0f;
-
 	public static float	actualMapWidth	= 0.0f;		//Size of map
 	public static float	actualMapHeight = 0.0f;
-
 	private Vector2 worldUp = new Vector2(1,1);
-
 	public float tileAmount = 40.0f;
 
-	// Use this for initialization
 	void Start ()
 	{
 		worldUp.Normalize();
@@ -26,20 +21,15 @@ public class MapScript : MonoBehaviour
 		actualMapHeight		= mapHeight * tileHeight;
 		map = this.gameObject;
 		map.GetComponent<MeshRenderer>().material.mainTextureScale = new Vector2(tileAmount/2.0f, tileAmount/2.0f);
-	}
-	
-	// Update is called once per frame
-	void Update ()
-	{
-		map.GetComponent<MeshRenderer>().material.mainTextureScale = new Vector2(tileAmount/2.0f, tileAmount/2.0f);
 		map.GetComponent<Transform>().localScale = new Vector3 (tileAmount * tileWidth, tileAmount * tileHeight, tileAmount);
 	}
+	void Update ()
+	{
 
-	
-	
-	//OTHER FUNCTIONS
-	//public static class WorldMap
-	
+	}
+
+	/*UTILITY FUNCTIONS*/
+	//Convert map space to world space
 	public static Vector3 _MapToWorldPos (Vector2 mapPos)
 	{
 		Vector3 worldPos;
@@ -53,7 +43,7 @@ public class MapScript : MonoBehaviour
 		
 		return worldPos;
 	}
-	
+	//Convert world space to map space
 	public static Vector2 _WorldToMapPos (Vector3 worldPos)
 	{
 		Vector2 mapPos;
