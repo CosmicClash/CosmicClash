@@ -1,142 +1,159 @@
-﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-
-public class DataCoreScript : MonoBehaviour
-{
-	public UserScript attacker;
-	public UserScript defender;
-
-	/*List of Game Objects*/
-	public List<UnitScript> SelectedUnits;
-	public GameObject mapObject;
-
-	/*Selecting Units variables*/
-	public GameObject	selectedUnit		= null;
-	public UnitScript	selectedUnitScript	= null;
-	public bool			isUnitSelected		= false;
-	private	RaycastHit	hit;
-	
-	public enum UnitClass{Unit1 = 0, Unit2 = 1, Unit3 = 2};
-	UnitClass spawnType = UnitClass.Unit1;
-	public List<int> Units;
-
-	/*Debugging*/
-	private string	debugString		= null;
-	private int		x = 0;
-	private int		y = 0;
-
-	void Start ()
-	{
-		//Battle Variables
-		spawnType = UnitClass.Unit1;
-		Units.Add (10);
-		Units.Add (15);
-		Units.Add (05);
-		//load attacker's data
-
-		//load defender's base
-		defender.name = "Defender";
-		defender.gold = 100;
-		defender.thorium = 100;
-		defender.numTrophies = 10;
-	}
-
-	void OnGUI ()
-	{
-//		if(GUI.Button(new Rect(20,40,100,20), "Unit 1"))
-//		{
-//			spawnClassType = ClassType.Unit1;
-//		}
-		
-		GUI.Box(new Rect(10,10,120,25), "Pos (" + x + ", " + y + ")");
-		//Unit Class switching buttons
-		if (GUI.Button (new Rect (10, 40, 120, 25), "Unit 1: " + Units[0]) && Units[0] > 0)
-		{
-			spawnType = UnitClass.Unit1;
-		}
-		else if (GUI.Button (new Rect (10, 70, 120, 25), "Unit 2: " + Units[1]) && Units[1] > 0)
-		{
-			spawnType = UnitClass.Unit2;
-		}
-		else if (GUI.Button (new Rect (10, 100, 120, 25), "Unit 3: " + Units[2]) && Units[2] > 0)
-		{
-			spawnType = UnitClass.Unit3;
-		}
-	}
-
-
-	void Update ()
-	{
-		/* IF THE LEFT MOUSE BUTTON IS DOWN */
-		if (Input.GetMouseButtonDown (0))
-		{
-			/* CREATE A RAY FROM MOUSE TO WORLD */
-			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-			Debug.DrawRay (ray.origin, ray.direction * 35.0f, Color.yellow);
-
-			/* DOES IT HIT ANYTHING IN THE SCENE? */
-			if (Physics.Raycast (ray, out hit))
-			{
-				if(hit.transform.gameObject.name == "map" && Units[(int)spawnType] > 0)
-				{
-					Vector2 pos = MapScript._WorldToMapPos(hit.point);
-					UnitScript.Instance(spawnType ,pos);
-					if(spawnType == UnitClass.Unit1) {Units[0] -= 1;}
-					if(spawnType == UnitClass.Unit2) {Units[1] -= 1;}
-					if(spawnType == UnitClass.Unit3) {Units[2] -= 1;}
-				}
-			}
-			
-			Vector2 mapPos = MapScript._WorldToMapPos(hit.point);
-			x = (int)mapPos.x;
-			y = (int)mapPos.y;
-
-		}//End mouse click
-
-	}//END UPDATE
-
-}
-
-//GETTER AND SETTER EXAMPLE BY BRANDON
-//	private float ptest =0.0f;
-//	public static float test{
-//		get{return ptest;}
-//		set{
-//			
-//			ptest = value;
-//			
-//			
-//		}
-//	}
-//	public static float test2{
-//		get{return ptest*2.0f;}
-//		set{
-//			
-//			ptest = value*0.5f;
-//			
-//			
-//		}
-//	}
-
-//	void updateTest(float old,float now){
-//		if (now == "main menu") {
+﻿//using UnityEngine;
+//using System.Collections;
+//using System.Collections.Generic;
 //
+//public class DataCoreScript : MonoBehaviour
+//{
+//	/*List of Game Objects*/
+//	public GameObject mapObject;
+//	public UnitScript.UnitClass spawnType;
+//	public List<int> unit;
+//	public List<GameObject> structures;
+//
+//	static public List<Component> units;
+//	static public List<Component> enemies;
+//
+//	private	RaycastHit	hit;
+//	
+//	/*Debugging*/
+//	private string	debugString		= null;
+//	private int		x = 0;
+//	private int		y = 0;
+//
+//	void Start ()
+//	{
+//		//Battle Variables
+//		//load attacker's data
+//		spawnType = UnitScript.UnitClass.Unit1;
+//		unit.Add (10);
+//		unit.Add (15);
+//		unit.Add (05);
+//
+//		//load defender's base
+//		_LoadDefenderBase();
+//	}
+//
+//	void OnGUI ()
+//	{		
+//		GUI.Box(new Rect(10,10,120,25), "Pos (" + x + ", " + y + ")");
+//		//Unit Class switching buttons
+//		if (GUI.Button (new Rect (10, 40, 120, 25), "Unit 1: " + unit[0]) && unit[0] > 0)
+//		{
+//			spawnType = UnitScript.UnitClass.Unit1;
+//		}
+//		else if (GUI.Button (new Rect (10, 70, 120, 25), "Unit 2: " + unit[1]) && unit[1] > 0)
+//		{
+//			spawnType = UnitScript.UnitClass.Unit2;
+//		}
+//		else if (GUI.Button (new Rect (10, 100, 120, 25), "Unit 3: " + unit[2]) && unit[2] > 0)
+//		{
+//			spawnType = UnitScript.UnitClass.Unit3;
 //		}
 //	}
-//DataCoreScript.test = 1.0f;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//
+//
+//	void Update ()
+//	{
+//		/* IF THE LEFT MOUSE BUTTON IS DOWN */
+//		if (Input.GetMouseButtonDown (0))
+//		{
+//			/* CREATE A RAY FROM MOUSE TO WORLD */
+//			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+//			Debug.DrawRay (ray.origin, ray.direction * 35.0f, Color.yellow);
+//
+//			/* DOES IT HIT ANYTHING IN THE SCENE? */
+//			if (Physics.Raycast (ray, out hit))
+//			{
+//				if(hit.transform.gameObject.name == "map" && unit[(int)spawnType] > 0)
+//				{
+//					Vector2 pos = MapScript._WorldToMapPos(hit.point);
+//					UnitScript.Instance(spawnType ,pos);
+//					if(spawnType == UnitScript.UnitClass.Unit1) {unit[0] -= 1;}
+//					if(spawnType == UnitScript.UnitClass.Unit2) {unit[1] -= 1;}
+//					if(spawnType == UnitScript.UnitClass.Unit3) {unit[2] -= 1;}
+//				}
+//			}
+//			
+//			Vector2 mapPos = MapScript._WorldToMapPos(hit.point);
+//			x = (int)mapPos.x;
+//			y = (int)mapPos.y;
+//
+//		}//End mouse click
+//
+//	}//END UPDATE
+//	
+//
+//	private void _LoadDefenderBase ()
+//	{
+//		//Read file and load shit
+//		structures.Add(StructureScript.Instance(StructureScript.StructureClass.Resource,	MapScript._RandomMapPos() ));
+//		structures.Add(StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() ));
+//		structures.Add(StructureScript.Instance(StructureScript.StructureClass.Generic,		MapScript._RandomMapPos() ));
+//		structures.Add(StructureScript.Instance(StructureScript.StructureClass.Resource,	MapScript._RandomMapPos() ));
+//		structures.Add(StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() ));
+//		structures.Add(StructureScript.Instance(StructureScript.StructureClass.Generic,		MapScript._RandomMapPos() ));
+//	}
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+////	static public Component _GetClosestEnemyToUnit (Component unit, out float fDistance)
+////	{	
+////		Component closest = null;
+////		foreach (Component enemy in this.structures)
+////		{
+////			if(closest == null) closest = enemy;
+////		}
+////		fDistance = 0.0f;
+////		return unit;
+////	}
+////		//Loop through potential targets and return the closest
+////		//First loop through them and get the preferred ones and get the closest of those
+////		if(potentialTargets.Count > 0)
+////		{
+////			List<GameObject> potTargs = potentialTargets;
+////			int closestTarg = 0;
+////			float smallestDist = (float)MapScript.mapWidth;
+////			for(int i = 0; i < potTargs.Count; i++)
+////			{
+////				Vector2 hereToThere = new Vector2 (this.obj.transform.position.x - potTargs[i].transform.position.x,
+////				                                   this.obj.transform.position.y - potTargs[i].transform.position.y);
+////				float dist = hereToThere.magnitude;
+////				if(dist < smallestDist)
+////				{
+////					smallestDist = dist;
+////					closestTarg = i;
+////				}
+////			}
+////			this.attackTarget = potTargs [closestTarg];
+////			this.moveTarget = MapScript._WorldToMapPos(this.attackTarget.transform.position);
+////		}
+//		//Make moveTarget be the range distance or less away from the attack target
+//		//Vector from unit to the attack target
+//		//		Vector2 unitToAtkTarg = MapScript._WorldToMapPos(this.attackTarget.transform.position) - this.pos;
+//		//		float magnitude = unitToAtkTarg.magnitude;
+//		//		if(magnitude > this.attackRange)
+//		//		{
+//		//			Vector2 directionVector = unitToAtkTarg.normalized * magnitude;
+//		//			this.moveTarget = MapScript._WorldToMapPos(directionVector);
+//		//		}
+//		//		else this.moveTarget = this.pos;
+//		//		Debug.Log("Mag: " + (int)magnitude);
+//
+//}
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//

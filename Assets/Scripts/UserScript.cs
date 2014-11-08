@@ -19,7 +19,7 @@ public class UserScript : MonoBehaviour
 
 	public bool shieldOn		= false;//maybe create a shield class. Or shield timer and/or shield type.
 
-	public List<FortificationScript>	fortifications;
+	public List<StructureScript>	fortifications;
 	public int numUnit1			= 0;
 	public int numUnit2			= 0;
 	public int numUnit3			= 0;

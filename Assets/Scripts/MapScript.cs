@@ -9,8 +9,8 @@ public class MapScript : MonoBehaviour
 	public static int	mapHeight		= 40;
 	public static float	tileWidth		= 1.0f;		//Width of a single tile
 	public static float	tileHeight		= 1.0f;
-	public static float	actualMapWidth	= 0.0f;		//Size of map
-	public static float	actualMapHeight = 0.0f;
+	public static float	actualMapWidth	= 40.0f;		//Size of map
+	public static float	actualMapHeight = 40.0f;
 	private Vector2 worldUp = new Vector2(1,1);
 	public float tileAmount = 40.0f;
 
@@ -22,10 +22,6 @@ public class MapScript : MonoBehaviour
 		map = this.gameObject;
 		map.GetComponent<MeshRenderer>().material.mainTextureScale = new Vector2(tileAmount/2.0f, tileAmount/2.0f);
 		map.GetComponent<Transform>().localScale = new Vector3 (tileAmount * tileWidth, tileAmount * tileHeight, tileAmount);
-	}
-	void Update ()
-	{
-
 	}
 
 	/*UTILITY FUNCTIONS*/
@@ -52,5 +48,28 @@ public class MapScript : MonoBehaviour
 
 		return mapPos;
 	}
-
+	public static Vector2 _RandomMapPos()
+	{
+		int xPos = Mathf.FloorToInt(Random.value * MapScript.actualMapWidth);
+		int yPos = Mathf.FloorToInt(Random.value * MapScript.actualMapHeight);
+		return new Vector2(xPos, yPos);
+	}
+	public static float _Distance_float (Vector2 mapPosA, Vector2 mapPosB)
+	{
+		//Sqrt of the sum of the square diffs
+		Vector2 diff = mapPosB - mapPosA;
+		float aSquared = diff.x * diff.x;
+		float bSquared = diff.y * diff.y;
+		float c = Mathf.Sqrt (aSquared + bSquared);
+		return c;
+	}
+	public static int _Distance_int (Vector2 mapPosA, Vector2 mapPosB)
+	{
+		//Sqrt of the sum of the square diffs
+		Vector2 diff = mapPosB - mapPosA;
+		float aSquared = diff.x * diff.x;
+		float bSquared = diff.y * diff.y;
+		float c = Mathf.Sqrt (aSquared + bSquared);
+		return (int)c;
+	}
 }
