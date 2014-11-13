@@ -7,7 +7,8 @@ public class UnitScript : MonoBehaviour
 	public Vector2 pos;
 	public Vector2 moveTarget;
 	public Component attackTarget;
-
+	
+	public int hp, maxHp;
 	public int attackPwr;
 	public float attackRange;
 	public float movementSpeed;
@@ -55,6 +56,8 @@ public class UnitScript : MonoBehaviour
 		gameObject.transform.position = MapScript._MapToWorldPos(mapPos);
 		if(unitClass == UnitClass.Unit1)
 		{
+			maxHp = 5000;
+			hp = maxHp;
 			movementSpeed	= 5.0f;
 			attackPwr = 10;
 			attackRange = 1.0f;
@@ -63,6 +66,8 @@ public class UnitScript : MonoBehaviour
 		}
 		else if(unitClass == UnitClass.Unit2)
 		{
+			maxHp = 4000;
+			hp = maxHp;
 			movementSpeed	= 9.0f;
 			attackPwr = 5;
 			attackRange = 4.0f;
@@ -71,6 +76,8 @@ public class UnitScript : MonoBehaviour
 		}
 		else if(unitClass == UnitClass.Unit3)
 		{
+			maxHp = 3000;
+			hp = maxHp;
 			movementSpeed	= 4.0f;
 			attackPwr = 30;
 			attackRange = 1.0f;
@@ -84,7 +91,7 @@ public class UnitScript : MonoBehaviour
 	{
 		GameObject unit = Instantiate(Resources.Load("unit")) as GameObject;
 		unit.GetComponent<UnitScript>().Initialize (unitClass, mapPos);
-		BattleSceneScript.units.Add(unit.GetComponent<UnitScript>());
+		BattleSceneScript._Units.Add(unit.GetComponent<UnitScript>());
 	}
 	public void Select()
 	{
@@ -165,6 +172,17 @@ public class UnitScript : MonoBehaviour
 		{
 			target.GetComponent<StructureScript>().TakeDamage(10);
 			if(target.GetComponent<StructureScript>().hp <= 0) attackTarget = null;
+		}
+	}
+	public void TakeDamage (int dmg)
+	{
+		if(hp > 0.0)hp -= dmg;
+		if(hp <= 0.0)
+		{
+			//Destroy(BattleSceneScript._Structures[0].gameObject);
+			BattleSceneScript._Units.Remove(this);
+			//Debug.Log(BattleSceneScript._Units.Count);
+			Destroy(gameObject);
 		}
 	}
 }

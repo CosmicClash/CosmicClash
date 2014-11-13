@@ -1,15 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class StructureScript : MonoBehaviour
 {
 	
 	public GameObject obj;
 	public Vector2 pos;
-	public UnitScript.UnitClass favoriteTarget;
+	public Component attackTarget;
+	
 	public int hp, maxHp;
+	public int attackPwr;
+	public float attackRange;
+	public bool isSelected = false;
+
+	public UnitScript.UnitClass preferredTarget;
 	public enum StructureClass	{Wall, Resource, Offensive, Generator, Generic};
+	public enum StructureState{Idle, Searching, Attack, Death};
 	public StructureClass	structClass;
+	public StructureState	structState;
 
 	void Start ()
 	{
@@ -17,11 +26,25 @@ public class StructureScript : MonoBehaviour
 	}
 	void Update ()
 	{
-
+		//State machine
+		if(structState == StructureState.Searching)
+		{
+			if(!attackTarget) FindTarget(BattleSceneScript._Units);
+			else structState = StructureState.Attack;
+		}
+		if(structState == StructureState.Attack)
+		{
+			if (!attackTarget) structState = StructureState.Searching;
+			else Attack(attackTarget);
+			
+		}
 	}
 	public void Initialize (StructureClass structureClass, Vector2 mapPos)
 	{
+		structState = StructureState.Searching;
 		structClass = structureClass;
+		attackPwr = 10;
+		attackRange = 4.0f;
 		maxHp	= 1000;
 		hp		= maxHp;
 		pos = mapPos;
@@ -37,9 +60,37 @@ public class StructureScript : MonoBehaviour
 		structure.GetComponent<StructureScript>().Initialize (structClass, mapPos);
 		BattleSceneScript._Structures.Add(structure.GetComponent<StructureScript>());
 	}
-	public void Attack ()
+	public void FindTarget (List<Component> potentialTargets)
 	{
-		
+		//Loop through potential targets and return the closest
+		//First loop through them and get the preferred ones and get the closest of those
+		if(potentialTargets.Count > 0)
+		{
+			List<Component> potTargs = potentialTargets;
+			int closestTarg = 0;
+			float smallestDist = (float)MapScript.mapWidth;
+			for(int i = 0; i < potTargs.Count; i++)
+			{
+				Vector2 hereToThere = new Vector2 (gameObject.transform.position.x - potTargs[i].transform.position.x,
+				                                   gameObject.transform.position.z - potTargs[i].transform.position.z);
+				float dist = hereToThere.magnitude;
+				if(dist < smallestDist && dist <= attackRange)
+				{
+					smallestDist = dist;
+					closestTarg = i;
+				}
+			}
+			attackTarget = potTargs [closestTarg];
+		}
+	}
+	/* SOME ATTACKING FUNCTION FOR NOW */
+	public void Attack (Component target)
+	{
+		if(target != null)
+		{
+			target.GetComponent<UnitScript>().TakeDamage(10);
+			if(target.GetComponent<UnitScript>().hp <= 0) attackTarget = null;
+		}
 	}
 	public void TakeDamage (int dmg)
 	{
@@ -48,7 +99,7 @@ public class StructureScript : MonoBehaviour
 		{
 			//Destroy(BattleSceneScript._Structures[0].gameObject);
 			BattleSceneScript._Structures.Remove(this);
-			Debug.Log(BattleSceneScript._Structures.Count);
+			//Debug.Log(BattleSceneScript._Structures.Count);
 			Destroy(gameObject);
 		}
 	}

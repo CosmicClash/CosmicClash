@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\GraphicsCoreScript.cs" />
      <Compile Include="Assets\Scripts\MapScript.cs" />
      <Compile Include="Assets\Scripts\StructureScript.cs" />
+     <Compile Include="Assets\Scripts\TimerScript.cs" />
      <Compile Include="Assets\Scripts\UnitClassScript.cs" />
      <Compile Include="Assets\Scripts\UnitScript.cs" />
      <Compile Include="Assets\Scripts\UserScript.cs" />

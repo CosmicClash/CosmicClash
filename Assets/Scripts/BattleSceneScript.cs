@@ -9,31 +9,15 @@ public class BattleSceneScript : MonoBehaviour
 	public UnitScript.UnitClass spawnType;
 	public List<int> unit;
 	public static List<Component> _Structures	= new List<Component>();
-	public static List<Component> units			= new List<Component>();
-	
+	public static List<Component> _Units		= new List<Component>();
+	public enum BattleState{Initializing = 0, Main = 1, DefenderWin = 2, AttackerWin = 3};
+	public BattleState battleState				= BattleState.Initializing;
+
 	private	RaycastHit	hit;
 	
-	/*Debugging*/
-	private string	debugString		= null;
-	private int		x = 0;
-	private int		y = 0;
-	
-	void Start ()
-	{
-		//Battle Variables
-		//load attacker's data
-		spawnType = UnitScript.UnitClass.Unit1;
-		unit.Add (100);
-		unit.Add (100);
-		unit.Add (100);
-		
-		//load defender's base
-		_LoadDefenderBase();
-	}
-	
 	void OnGUI ()
-	{		
-		GUI.Box(new Rect(10,10,120,25), "Pos (" + x + ", " + y + ")");
+	{
+		if(TimerScript._On)GUI.Box (new Rect (10, 5, 120, 25), "Time Left: " + TimerScript._GetTimeLeft());
 		//Unit Class switching buttons
 		if (GUI.Button (new Rect (10, 40, 120, 25), "Unit 1: " + unit[0]) && unit[0] > 0)
 		{
@@ -50,6 +34,38 @@ public class BattleSceneScript : MonoBehaviour
 	}
 
 	void Update ()
+	{
+		switch (battleState)
+		{
+		case BattleState.Initializing:
+			_Initialize();
+			break;
+		case BattleState.Main:
+			_MainPhase();
+			break;
+		default:
+			break;
+		}
+	}
+	
+	private void _Initialize ()
+	{
+		TimerScript._Initialize (15.0f, true);
+		//Battle Variables
+		//load attacker's data
+		spawnType = UnitScript.UnitClass.Unit1;
+		unit.Add (100);
+		unit.Add (100);
+		unit.Add (100);
+		
+		//load defender's base
+		_LoadDefenderBase();
+
+		//Go to main battle phase
+		battleState = BattleState.Main;
+	}
+
+	private void _MainPhase ()
 	{
 		/* IF THE LEFT MOUSE BUTTON IS DOWN */
 		if (Input.GetMouseButtonDown (0))
@@ -70,34 +86,11 @@ public class BattleSceneScript : MonoBehaviour
 					if(spawnType == UnitScript.UnitClass.Unit3) {unit[2] -= 1;}
 				}
 			}
-			
-			Vector2 mapPos = MapScript._WorldToMapPos(hit.point);
-			x = (int)mapPos.x;
-			y = (int)mapPos.y;
-			
-		}//End mouse click
-
+		}
 		//Add random structures
-		if(Time.frameCount %75 == 1) StructureScript.Instance(StructureScript.StructureClass.Resource,	MapScript._RandomMapPos() );
-		
-	}//END UPDATE
-
-	public void SetSpawnType (string unitType)
-	{
-		if(unitType == "GroundTroop")
-		{
-			this.spawnType = UnitScript.UnitClass.Unit1;
-		}
-		if(unitType == "Ranger")
-		{
-			this.spawnType = UnitScript.UnitClass.Unit2;
-		}
-		if(unitType == "Thief")
-		{
-			this.spawnType = UnitScript.UnitClass.Unit3;
-		}
+		if(Time.frameCount %20 == 1) StructureScript.Instance(StructureScript.StructureClass.Resource,	MapScript._RandomMapPos() );
 	}
-	
+
 	private void _LoadDefenderBase ()
 	{
 		//Read file and load shit
@@ -117,59 +110,6 @@ public class BattleSceneScript : MonoBehaviour
 		StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() );
 		StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() );
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	//	static public Component _GetClosestEnemyToUnit (Component unit, out float fDistance)
-	//	{	
-	//		Component closest = null;
-	//		foreach (Component enemy in this._Structures)
-	//		{
-	//			if(closest == null) closest = enemy;
-	//		}
-	//		fDistance = 0.0f;
-	//		return unit;
-	//	}
-	//		//Loop through potential targets and return the closest
-	//		//First loop through them and get the preferred ones and get the closest of those
-	//		if(potentialTargets.Count > 0)
-	//		{
-	//			List<GameObject> potTargs = potentialTargets;
-	//			int closestTarg = 0;
-	//			float smallestDist = (float)MapScript.mapWidth;
-	//			for(int i = 0; i < potTargs.Count; i++)
-	//			{
-	//				Vector2 hereToThere = new Vector2 (this.obj.transform.position.x - potTargs[i].transform.position.x,
-	//				                                   this.obj.transform.position.y - potTargs[i].transform.position.y);
-	//				float dist = hereToThere.magnitude;
-	//				if(dist < smallestDist)
-	//				{
-	//					smallestDist = dist;
-	//					closestTarg = i;
-	//				}
-	//			}
-	//			this.attackTarget = potTargs [closestTarg];
-	//			this.moveTarget = MapScript._WorldToMapPos(this.attackTarget.transform.position);
-	//		}
-	//Make moveTarget be the range distance or less away from the attack target
-	//Vector from unit to the attack target
-	//		Vector2 unitToAtkTarg = MapScript._WorldToMapPos(this.attackTarget.transform.position) - this.pos;
-	//		float magnitude = unitToAtkTarg.magnitude;
-	//		if(magnitude > this.attackRange)
-	//		{
-	//			Vector2 directionVector = unitToAtkTarg.normalized * magnitude;
-	//			this.moveTarget = MapScript._WorldToMapPos(directionVector);
-	//		}
-	//		else this.moveTarget = this.pos;
-	//		Debug.Log("Mag: " + (int)magnitude);
-	
 }
 
 
