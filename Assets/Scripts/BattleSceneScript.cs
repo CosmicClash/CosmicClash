@@ -8,9 +8,8 @@ public class BattleSceneScript : MonoBehaviour
 	public GameObject mapObject;
 	public UnitScript.UnitClass spawnType;
 	public List<int> unit;
-	public static List<Component> structures = new List<Component>();
-	public List<Component> units;
-	//public static List<Component> units			= new List<Component>();
+	public static List<Component> _Structures	= new List<Component>();
+	public static List<Component> units			= new List<Component>();
 	
 	private	RaycastHit	hit;
 	
@@ -24,9 +23,9 @@ public class BattleSceneScript : MonoBehaviour
 		//Battle Variables
 		//load attacker's data
 		spawnType = UnitScript.UnitClass.Unit1;
-		unit.Add (50);
-		unit.Add (60);
-		unit.Add (60);
+		unit.Add (100);
+		unit.Add (100);
+		unit.Add (100);
 		
 		//load defender's base
 		_LoadDefenderBase();
@@ -65,7 +64,7 @@ public class BattleSceneScript : MonoBehaviour
 				if(hit.transform.gameObject.name == "map" && unit[(int)spawnType] > 0)
 				{
 					Vector2 pos = MapScript._WorldToMapPos(hit.point);
-					units.Add(UnitScript.Instance(spawnType ,pos).GetComponent<UnitScript>());
+					UnitScript.Instance(spawnType ,pos);
 					if(spawnType == UnitScript.UnitClass.Unit1) {unit[0] -= 1;}
 					if(spawnType == UnitScript.UnitClass.Unit2) {unit[1] -= 1;}
 					if(spawnType == UnitScript.UnitClass.Unit3) {unit[2] -= 1;}
@@ -77,6 +76,9 @@ public class BattleSceneScript : MonoBehaviour
 			y = (int)mapPos.y;
 			
 		}//End mouse click
+
+		//Add random structures
+		if(Time.frameCount %75 == 1) StructureScript.Instance(StructureScript.StructureClass.Resource,	MapScript._RandomMapPos() );
 		
 	}//END UPDATE
 
@@ -99,20 +101,21 @@ public class BattleSceneScript : MonoBehaviour
 	private void _LoadDefenderBase ()
 	{
 		//Read file and load shit
-		StructureScript.Instance(StructureScript.StructureClass.Resource,
-		                                             MapScript._RandomMapPos() );
-//		this.structures.Add(StructureScript.Instance(StructureScript.StructureClass.Generic,
-//		                                             MapScript._RandomMapPos() ).GetComponent<StructureScript>());
-//		this.structures.Add(StructureScript.Instance(StructureScript.StructureClass.Offensive,
-//		                                             MapScript._RandomMapPos() ).GetComponent<StructureScript>());
-//		this.structures.Add(StructureScript.Instance(StructureScript.StructureClass.Offensive,
-//		                                             MapScript._RandomMapPos() ).GetComponent<StructureScript>());
-//		this.structures.Add(StructureScript.Instance(StructureScript.StructureClass.Generic,
-//		                                             MapScript._RandomMapPos() ).GetComponent<StructureScript>());
-//		this.structures.Add(StructureScript.Instance(StructureScript.StructureClass.Resource,
-//		                                             MapScript._RandomMapPos() ).GetComponent<StructureScript>());
-//		this.structures.Add(StructureScript.Instance(StructureScript.StructureClass.Resource,
-//		                                             MapScript._RandomMapPos() ).GetComponent<StructureScript>());
+		StructureScript.Instance(StructureScript.StructureClass.Resource,	MapScript._RandomMapPos() );
+		StructureScript.Instance(StructureScript.StructureClass.Resource,	MapScript._RandomMapPos() );
+		StructureScript.Instance(StructureScript.StructureClass.Resource,	MapScript._RandomMapPos() );
+		StructureScript.Instance(StructureScript.StructureClass.Generic,	MapScript._RandomMapPos() );
+		StructureScript.Instance(StructureScript.StructureClass.Generic,	MapScript._RandomMapPos() );
+		StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() );
+		StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() );
+		StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() );
+		StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() );
+		StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() );
+		StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() );
+		StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() );
+		StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() );
+		StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() );
+		StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() );
 	}
 	
 	
@@ -127,7 +130,7 @@ public class BattleSceneScript : MonoBehaviour
 	//	static public Component _GetClosestEnemyToUnit (Component unit, out float fDistance)
 	//	{	
 	//		Component closest = null;
-	//		foreach (Component enemy in this.structures)
+	//		foreach (Component enemy in this._Structures)
 	//		{
 	//			if(closest == null) closest = enemy;
 	//		}

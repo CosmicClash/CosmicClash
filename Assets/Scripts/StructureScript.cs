@@ -11,7 +11,7 @@ public class StructureScript : MonoBehaviour
 	public enum StructureClass	{Wall, Resource, Offensive, Generator, Generic};
 	public StructureClass	structClass;
 
-	void Awake ()
+	void Start ()
 	{
 
 	}
@@ -21,22 +21,21 @@ public class StructureScript : MonoBehaviour
 	}
 	public void Initialize (StructureClass structureClass, Vector2 mapPos)
 	{
-		this.structClass = structureClass;
-		this.maxHp	= 100;
-		this.hp		= maxHp;
-		this.pos = mapPos;
-		this.obj = this.transform.gameObject;
-		this.obj.transform.position = MapScript._MapToWorldPos(this.pos);
-		GraphicsCoreScript._SetMaterial(this.obj, "struct1Mat");
+		structClass = structureClass;
+		maxHp	= 1000;
+		hp		= maxHp;
+		pos = mapPos;
+		obj = transform.gameObject;
+		obj.transform.position = MapScript._MapToWorldPos(pos);
+		GraphicsCoreScript._SetMaterial(obj, "struct1Mat");
 		//Parent it to the UnitContainer Object
-		this.transform.parent = GameObject.Find("StructureContainer").transform;
+		transform.parent = GameObject.Find("StructureContainer").transform;
 	}
 	public static void Instance (StructureClass structClass, Vector2 mapPos)
 	{
 		GameObject structure = Instantiate(Resources.Load("structure")) as GameObject;
 		structure.GetComponent<StructureScript>().Initialize (structClass, mapPos);
-		BattleSceneScript.structures.Add(structure.GetComponent<StructureScript>());
-		//
+		BattleSceneScript._Structures.Add(structure.GetComponent<StructureScript>());
 	}
 	public void Attack ()
 	{
@@ -44,7 +43,13 @@ public class StructureScript : MonoBehaviour
 	}
 	public void TakeDamage (int dmg)
 	{
-		Debug.Log("Structure: Taking damage");
-		if(this.hp > 0.0)this.hp -= dmg;
+		if(hp > 0.0)hp -= dmg;
+		if(hp <= 0.0)
+		{
+			//Destroy(BattleSceneScript._Structures[0].gameObject);
+			BattleSceneScript._Structures.Remove(this);
+			Debug.Log(BattleSceneScript._Structures.Count);
+			Destroy(gameObject);
+		}
 	}
 }

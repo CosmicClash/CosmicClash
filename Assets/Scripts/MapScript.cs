@@ -32,10 +32,12 @@ public class MapScript : MonoBehaviour
 		worldPos.x		=	0.0f - (actualMapWidth/2.0f);
 		worldPos.x		+=	(mapPos.x * tileWidth);
 		worldPos.x		+=	(tileWidth/2.0f);
-		worldPos.y		=	0.0f - (actualMapHeight/2.0f);
-		worldPos.y		+=	(mapPos.y * tileHeight);
-		worldPos.y		+=	(tileHeight/2.0f);
-		worldPos.z		=	-0.75f;
+
+		worldPos.y		=	0.5f;
+
+		worldPos.z		=	0.0f - (actualMapHeight/2.0f);
+		worldPos.z		+=	(mapPos.y * tileHeight);
+		worldPos.z		+=	(tileHeight/2.0f);
 		
 		return worldPos;
 	}
@@ -44,7 +46,7 @@ public class MapScript : MonoBehaviour
 	{
 		Vector2 mapPos;
 		mapPos.x = Mathf.Floor(worldPos.x + mapWidth/2.0f);
-		mapPos.y = Mathf.Floor(worldPos.y + mapHeight/2.0f);
+		mapPos.y = Mathf.Floor(worldPos.z + mapHeight/2.0f);
 
 		return mapPos;
 	}

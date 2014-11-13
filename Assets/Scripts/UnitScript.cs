@@ -4,8 +4,6 @@ using System.Collections.Generic;
 
 public class UnitScript : MonoBehaviour
 {
-
-	public GameObject obj;
 	public Vector2 pos;
 	public Vector2 moveTarget;
 	public Component attackTarget;
@@ -30,70 +28,63 @@ public class UnitScript : MonoBehaviour
 	void Update ()
 	{
 		//State machine
-		if(this.unitState == UnitState.Searching)
+		if(unitState == UnitState.Searching)
 		{
-			if(this.attackTarget == null)
-			{
-				//this.FindTarget(GameObject.Find("DataCoreObject").GetComponent<BattleSceneScript>().structures);//BattleSceneScript.structures
-				this.FindTarget(BattleSceneScript.structures);
-			}
+			if(!attackTarget) FindTarget(BattleSceneScript._Structures);
 			else unitState = UnitState.Move;
 		}
-		if(this.unitState == UnitState.Move)
+		if(unitState == UnitState.Move)
 		{
-			if(this.attackTarget != null && this.moveTarget != null) this.MoveUnit();
+			if(attackTarget && moveTarget != null) MoveUnit();
+			else unitState = UnitState.Searching;
 		}
-		if(this.unitState == UnitState.Attack)
+		if(unitState == UnitState.Attack)
 		{
-			if (this.attackTarget == null)
-			{
-				this.unitState = UnitState.Searching;
-			}
-			//else this.Attack(this.attackTarget);
+			if (!attackTarget) unitState = UnitState.Searching;
+			else Attack(attackTarget);
 
 		}
 
 	}
 	public void Initialize (UnitClass unitClass, Vector2 mapPos)
 	{
-		this.unitState = UnitState.Searching;
-		this.unitClass = unitClass;
-		this.pos = mapPos;
-		this.moveTarget = this.pos;
-		this.obj = this.transform.gameObject;
-		this.obj.transform.position = MapScript._MapToWorldPos(mapPos);
+		unitState = UnitState.Searching;
+		unitClass = unitClass;
+		pos = mapPos;
+		moveTarget = pos;
+		gameObject.transform.position = MapScript._MapToWorldPos(mapPos);
 		if(unitClass == UnitClass.Unit1)
 		{
-			this.movementSpeed	= 5.0f;
-			this.attackPwr = 10;
-			this.attackRange = 1.0f;
-			this.preferredTarget = StructureScript.StructureClass.Generic;
-			GraphicsCoreScript._SetMaterial(this.obj, "Unit1Mat");
+			movementSpeed	= 5.0f;
+			attackPwr = 10;
+			attackRange = 1.0f;
+			preferredTarget = StructureScript.StructureClass.Generic;
+			GraphicsCoreScript._SetMaterial(gameObject, "Unit1Mat");
 		}
 		else if(unitClass == UnitClass.Unit2)
 		{
-			this.movementSpeed	= 9.0f;
-			this.attackPwr = 5;
-			this.attackRange = 4.0f;
-			this.preferredTarget = StructureScript.StructureClass.Resource;
-			GraphicsCoreScript._SetMaterial(this.obj, "Unit2Mat");
+			movementSpeed	= 9.0f;
+			attackPwr = 5;
+			attackRange = 4.0f;
+			preferredTarget = StructureScript.StructureClass.Resource;
+			GraphicsCoreScript._SetMaterial(gameObject, "Unit2Mat");
 		}
 		else if(unitClass == UnitClass.Unit3)
 		{
-			this.movementSpeed	= 4.0f;
-			this.attackPwr = 30;
-			this.attackRange = 1.0f;
-			this.preferredTarget = StructureScript.StructureClass.Offensive;
-			GraphicsCoreScript._SetMaterial(this.obj, "Unit3Mat");
+			movementSpeed	= 4.0f;
+			attackPwr = 30;
+			attackRange = 1.0f;
+			preferredTarget = StructureScript.StructureClass.Offensive;
+			GraphicsCoreScript._SetMaterial(gameObject, "Unit3Mat");
 		}
 		//Parent it to the UnitContainer Object
-		this.transform.parent = GameObject.Find("UnitContainer").transform;
+		transform.parent = GameObject.Find("UnitContainer").transform;
 	}
-	public static GameObject Instance (UnitClass unitClass, Vector2 mapPos)
+	public static void Instance (UnitClass unitClass, Vector2 mapPos)
 	{
 		GameObject unit = Instantiate(Resources.Load("unit")) as GameObject;
 		unit.GetComponent<UnitScript>().Initialize (unitClass, mapPos);
-		return unit;
+		BattleSceneScript.units.Add(unit.GetComponent<UnitScript>());
 	}
 	public void Select()
 	{
@@ -116,8 +107,8 @@ public class UnitScript : MonoBehaviour
 				float smallestDist = (float)MapScript.mapWidth;
 				for(int i = 0; i < potTargs.Count; i++)
 				{
-					Vector2 hereToThere = new Vector2 (this.obj.transform.position.x - potTargs[i].transform.position.x,
-					                                   this.obj.transform.position.y - potTargs[i].transform.position.y);
+					Vector2 hereToThere = new Vector2 (gameObject.transform.position.x - potTargs[i].transform.position.x,
+					                                   gameObject.transform.position.z - potTargs[i].transform.position.z);
 					float dist = hereToThere.magnitude;
 					if(dist < smallestDist)
 					{
@@ -125,53 +116,55 @@ public class UnitScript : MonoBehaviour
 						closestTarg = i;
 					}
 				}
-				this.attackTarget = potTargs [closestTarg];
-				this.moveTarget = MapScript._WorldToMapPos(this.attackTarget.transform.position);
+				attackTarget = potTargs [closestTarg];
+				moveTarget = MapScript._WorldToMapPos(attackTarget.transform.position);
 		}
 		//Make moveTarget be the range distance or less away from the attack target
 		//Vector from unit to the attack target
-//		Vector2 unitToAtkTarg = MapScript._WorldToMapPos(this.attackTarget.transform.position) - this.pos;
+//		Vector2 unitToAtkTarg = MapScript._WorldToMapPos(attackTarget.transform.position) - pos;
 //		float magnitude = unitToAtkTarg.magnitude;
-//		if(magnitude > this.attackRange)
+//		if(magnitude > attackRange)
 //		{
 //			Vector2 directionVector = unitToAtkTarg.normalized * magnitude;
-//			this.moveTarget = MapScript._WorldToMapPos(directionVector);
+//			moveTarget = MapScript._WorldToMapPos(directionVector);
 //		}
-//		else this.moveTarget = this.pos;
+//		else moveTarget = pos;
 //		Debug.Log("Mag: " + (int)magnitude);
 	}
 	public void RandomMoveTarget ()
 	{
-		this.moveTarget = MapScript._RandomMapPos();
+		moveTarget = MapScript._RandomMapPos();
 	}
 	public void MoveUnit()
 	{
-		if(!AmIWithinRange(this.attackTarget))
+		if(!attackTarget) return;
+		if(!AmIWithinRange(attackTarget))
 		{
 			//Move unit to move-target
-			Vector2 unitToTarget = this.moveTarget - this.pos;
+			Vector2 unitToTarget = moveTarget - pos;
 			unitToTarget.Normalize();
-			this.obj.transform.Translate(unitToTarget * Time.deltaTime * this.movementSpeed);
-			this.pos = MapScript._WorldToMapPos(this.obj.transform.position);
+
+			gameObject.transform.Translate(unitToTarget.x * Time.deltaTime * movementSpeed, 0.0f, unitToTarget.y * Time.deltaTime * movementSpeed);
+			pos = MapScript._WorldToMapPos(gameObject.transform.position);
 		}
-		else this.unitState = UnitState.Attack;
+		else unitState = UnitState.Attack;
 	}
 	private bool AmIWithinRange (Component atkTarget)
 	{
 		Vector2 atkTargMapPos = MapScript._WorldToMapPos(atkTarget.transform.position);
-		if(MapScript._Distance_int(this.pos, atkTargMapPos) <= this.attackRange)
+		if(MapScript._Distance_int(pos, atkTargMapPos) <= attackRange)
 		{
 			return true;
 		}
 		else return false;
 	}
 	/* SOME ATTACKING FUNCTION FOR NOW */
-	public void Attack (GameObject target)
+	public void Attack (Component target)
 	{
-		Debug.Log("Unit: Attacking");
 		if(target != null)
 		{
 			target.GetComponent<StructureScript>().TakeDamage(10);
+			if(target.GetComponent<StructureScript>().hp <= 0) attackTarget = null;
 		}
 	}
 }
