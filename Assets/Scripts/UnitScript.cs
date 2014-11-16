@@ -18,7 +18,7 @@ public class UnitScript : MonoBehaviour
 
 	public enum UnitClass{Unit1, Unit2, Unit3};
 	public enum UnitState{Idle, Move, Searching, Attack, Death};
-	public enum UnitDirection{N, NE, E, SE, S, SW, W, NW};
+	public enum UnitDirection{N = 0, NE = 1, E = 2, SE = 3, S = 4, SW = 5, W = 6, NW = 7};
 	public UnitClass			unitClass;
 	public UnitState			unitState;
 	public UnitDirection		unitDirection;
@@ -32,26 +32,31 @@ public class UnitScript : MonoBehaviour
 	void Update ()
 	{
 		//State machine
-		if(unitState == UnitState.Searching)
+		switch (unitState)
 		{
-			if(!attackTarget) FindTarget(DataCoreScript._Defenders);
+		case UnitState.Idle:
+			_Idle();
+			break;
+		case UnitState.Searching:
+			if(!attackTarget) _FindNearestPreferredTarget(DataCoreScript._Defenders);
 			else unitState = UnitState.Move;
-		}
-		if(unitState == UnitState.Move)
-		{
+			break;
+		case UnitState.Move:
 			if(attackTarget && moveTarget != null) MoveUnit();
 			else unitState = UnitState.Searching;
-		}
-		if(unitState == UnitState.Attack)
-		{
+			break;
+		case UnitState.Attack:
 			if (!attackTarget) unitState = UnitState.Searching;
 			else Attack(attackTarget);
-
+			break;
+		default:
+			break;
 		}
 
 	}
 	public void Initialize (UnitClass unitClass, Vector2 mapPos)
 	{
+		unitDirection = UnitDirection.N;
 		unitState = UnitState.Searching;
 		unitClass = unitClass;
 		pos = mapPos;
@@ -92,7 +97,7 @@ public class UnitScript : MonoBehaviour
 	}
 	public static void Instance (UnitClass unitClass, Vector2 mapPos)
 	{
-		GameObject unit = Instantiate(Resources.Load("unit")) as GameObject;
+		GameObject unit = Instantiate(Resources.Load("unit")) as GameObject;//Resources.Load("unitSeeker")) as GameObject;
 		unit.GetComponent<UnitScript>().Initialize (unitClass, mapPos);
 		DataCoreScript._Attackers.Add(unit.GetComponent<UnitScript>());
 	}
@@ -105,8 +110,12 @@ public class UnitScript : MonoBehaviour
 	{
 		isSelected = false;
 	}
-	
-	public void FindTarget (List<Component> potentialTargets)
+
+	public void _Idle ()
+	{
+		//Play Idle Animation
+	}
+	public void _FindNearestPreferredTarget (List<Component> potentialTargets)
 	{
 		//Loop through potential targets and return the closest
 		//First loop through them and get the preferred ones and get the closest of those
@@ -129,6 +138,7 @@ public class UnitScript : MonoBehaviour
 				attackTarget = potTargs [closestTarg];
 				moveTarget = MapScript._WorldToMapPos(attackTarget.transform.position);
 		}
+		else unitState = UnitState.Idle;
 		//Make moveTarget be the range distance or less away from the attack target
 		//Vector from unit to the attack target
 //		Vector2 unitToAtkTarg = MapScript._WorldToMapPos(attackTarget.transform.position) - pos;
@@ -156,8 +166,12 @@ public class UnitScript : MonoBehaviour
 
 			gameObject.transform.Translate(unitToTarget.x * Time.deltaTime * movementSpeed, 0.0f, unitToTarget.y * Time.deltaTime * movementSpeed);
 			pos = MapScript._WorldToMapPos(gameObject.transform.position);
+
+			//Set Unit Direction for sprite drawing
+			//Use Switch statement
 		}
 		else unitState = UnitState.Attack;
+
 	}
 	private bool AmIWithinRange (Component atkTarget)
 	{

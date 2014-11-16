@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class UserScript : MonoBehaviour
+public class UserScript
 {
 
 	public string name = null;
@@ -19,25 +19,52 @@ public class UserScript : MonoBehaviour
 
 	public bool shieldOn		= false;//maybe create a shield class. Or shield timer and/or shield type.
 
-	public List<StructureScript>	fortifications;
-	public int numUnit1			= 0;
-	public int numUnit2			= 0;
-	public int numUnit3			= 0;
-	public int maxUnitStorage	= 15;
 
-	void Start ()
+	public enum UserRole{Attacker, Defender};
+	public class UnitDrawer
 	{
-	
-	}
-	void Update ()
-	{
-	
-	}
+		public UnitScript.UnitClass unitType;
+		public int amount;
+	};
+
+	public List<StructureScript>	fortifications;
+	public List<UnitDrawer>			unitCupboard;
+	public UserRole userRole;
+
 	public void Initialize ()
 	{
-		//test initialization
-		this.numUnit1 = 10;
-		this.numUnit2 = 10;
-		this.numUnit3 = 10;
+
+	}
+	public void _LoadAttacker()
+	{
+		userRole = UserRole.Attacker;
+		
+		UnitDrawer aUnit_1 = new UnitDrawer();
+		UnitDrawer aUnit_2 = new UnitDrawer();
+		UnitDrawer aUnit_3 = new UnitDrawer();
+		
+		aUnit_1.unitType	= UnitScript.UnitClass.Unit1;
+		aUnit_1.amount		= 100;
+		aUnit_2.unitType	= UnitScript.UnitClass.Unit2;
+		aUnit_2.amount		= 100;
+		aUnit_3.unitType	= UnitScript.UnitClass.Unit3;
+		aUnit_3.amount		= 100;
+
+		//unitCupboard.Add(aUnit_1);
+		//unitCupboard.Add(aUnit_1);
+		//unitCupboard.Add(aUnit_2);
+		//unitCupboard.Add(aUnit_3);
+	}
+	public void _LoadDefender()
+	{
+		userRole = UserRole.Defender;
+
+		int randomNum = Random.Range(10, 30);
+		for(int i = 0; i < randomNum; i++)
+		{
+			int randomClass = (int)Random.Range(0, 3);
+			StructureScript.Instance((StructureScript.StructureClass)randomClass,	MapScript._RandomMapPos() );
+		}
+		Debug.Log("Num Structures: " + randomNum);
 	}
 }

@@ -7,7 +7,7 @@ public class BattleSceneScript : MonoBehaviour
 	/*List of Game Objects*/
 	public UnitScript.UnitClass spawnType;
 	public List<int> unit;
-	public enum BattleState{Initializing = 0, Main = 1, DefenderWin = 2, AttackerWin = 3};
+	public enum BattleState{Initializing = 0, Main = 1, DefenderWin = 2, AttackerWin = 3, BattleQuit = 4};
 	public BattleState battleState	= BattleState.Initializing;
 
 	private	RaycastHit	hit;
@@ -48,15 +48,16 @@ public class BattleSceneScript : MonoBehaviour
 	private void _Initialize ()
 	{
 		TimerScript._Initialize (15.0f, true);
-		//Battle Variables
 		//load attacker's data
+		DataCoreScript._InitializeUsers();
 		spawnType = UnitScript.UnitClass.Unit1;
 		unit.Add (100);
 		unit.Add (100);
 		unit.Add (100);
-		
-		//load defender's base
-		_LoadDefenderBase();
+
+		//Generate Collision Mesh Data
+		//Call Scan function from the A* path finding script on the DataCoreObject
+		DataCoreScript._GeneratePathFindingMesh();
 
 		//Go to main battle phase
 		battleState = BattleState.Main;
@@ -70,11 +71,18 @@ public class BattleSceneScript : MonoBehaviour
 			/* CREATE A RAY FROM MOUSE TO WORLD */
 			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 			Debug.DrawRay (ray.origin, ray.direction * 35.0f, Color.yellow);
-			
 			/* DOES IT HIT ANYTHING IN THE SCENE? */
 			if (Physics.Raycast (ray, out hit))
 			{
-				if(hit.transform.gameObject.name == "map" && unit[(int)spawnType] > 0)
+				//Only spawn it if the ray hits within the map bounds
+				float minX = -MapScript.actualMapWidth	/2.0f + MapScript.tileWidth		/2.0f;
+				float minY = -MapScript.actualMapWidth	/2.0f + MapScript.tileWidth		/2.0f;
+				float maxX =  MapScript.actualMapHeight	/2.0f - MapScript.tileHeight	/2.0f;
+				float maxY =  MapScript.actualMapHeight	/2.0f - MapScript.tileHeight	/2.0f;
+
+				if(hit.transform.position.x >= minX && hit.transform.position.x <= maxX &&
+				   hit.transform.position.z >= minY && hit.transform.position.z <= maxY &&
+				   unit[(int)spawnType] > 0)
 				{
 					Vector2 pos = MapScript._WorldToMapPos(hit.point);
 					UnitScript.Instance(spawnType ,pos);
@@ -84,28 +92,6 @@ public class BattleSceneScript : MonoBehaviour
 				}
 			}
 		}
-		//Add random structures
-		//if(Time.frameCount %20 == 1) StructureScript.Instance(StructureScript.StructureClass.Resource,	MapScript._RandomMapPos() );
-	}
-
-	private void _LoadDefenderBase ()
-	{
-		//Read file and load shit
-		StructureScript.Instance(StructureScript.StructureClass.Resource,	MapScript._RandomMapPos() );
-		StructureScript.Instance(StructureScript.StructureClass.Resource,	MapScript._RandomMapPos() );
-		StructureScript.Instance(StructureScript.StructureClass.Resource,	MapScript._RandomMapPos() );
-		StructureScript.Instance(StructureScript.StructureClass.Generic,	MapScript._RandomMapPos() );
-		StructureScript.Instance(StructureScript.StructureClass.Generic,	MapScript._RandomMapPos() );
-		StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() );
-		StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() );
-		StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() );
-		StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() );
-		StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() );
-		StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() );
-		StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() );
-		StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() );
-		StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() );
-		StructureScript.Instance(StructureScript.StructureClass.Offensive,	MapScript._RandomMapPos() );
 	}
 }
 

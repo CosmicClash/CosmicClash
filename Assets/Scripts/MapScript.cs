@@ -3,22 +3,12 @@ using System.Collections;
 
 public class MapScript : MonoBehaviour
 {
-	public GameObject map;
-
 	public static int	mapWidth		= 40;		//Num of tiles wide
 	public static int	mapHeight		= 40;
 	public static float	tileWidth		= 1.0f;		//Width of a single tile
 	public static float	tileHeight		= 1.0f;
 	public static float	actualMapWidth	= 40.0f;		//Size of map
 	public static float	actualMapHeight = 40.0f;
-	public float tileAmount = 40.0f;
-
-	void Start ()
-	{
-		actualMapWidth		= mapWidth	* tileWidth;
-		actualMapHeight		= mapHeight * tileHeight;
-		map = this.gameObject;
-	}
 
 	/*UTILITY FUNCTIONS*/
 	//Convert map space to world space

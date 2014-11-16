@@ -15,7 +15,7 @@ public class StructureScript : MonoBehaviour
 	public bool isSelected = false;
 
 	public UnitScript.UnitClass preferredTarget;
-	public enum StructureClass	{Wall, Resource, Offensive, Generator, Generic};
+	public enum StructureClass	{Wall = 0, Resource = 1, Offensive = 2, Generator = 3, Generic = 4};
 	public enum StructureState{Idle, Searching, Attack, Death};
 	public StructureClass	structClass;
 	public StructureState	structState;
@@ -56,7 +56,7 @@ public class StructureScript : MonoBehaviour
 	}
 	public static void Instance (StructureClass structClass, Vector2 mapPos)
 	{
-		GameObject structure = Instantiate(Resources.Load("structure")) as GameObject;
+		GameObject structure = Instantiate(Resources.Load("structureObstacle")) as GameObject;
 		structure.GetComponent<StructureScript>().Initialize (structClass, mapPos);
 		DataCoreScript._Defenders.Add(structure.GetComponent<StructureScript>());
 	}
