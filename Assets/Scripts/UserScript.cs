@@ -26,9 +26,8 @@ public class UserScript
 		public UnitScript.UnitClass unitType;
 		public int amount;
 	};
-
-	public List<StructureScript>	fortifications;
 	public List<UnitDrawer>			unitCupboard;
+	public List<StructureScript>	fortifications;
 	public UserRole userRole;
 
 	public void Initialize ()

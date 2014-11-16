@@ -32,6 +32,7 @@ public static class DataCoreScript
 		DataCoreScript._Users.Add(defender);
 	}
 
+	//Use to regenerate mesh when a structure is destroyed.
 	public static void _GeneratePathFindingMesh()
 	{
 		if(!DataCoreScript._bPathFinderFound)	DataCoreScript._PathFinder = GameObject.Find("A*");

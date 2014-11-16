@@ -43,6 +43,7 @@ public class UnitScript : MonoBehaviour
 			break;
 		case UnitState.Move:
 			if(attackTarget && moveTarget != null) MoveUnit();
+			//if(attackTarget && moveTarget != null) gameObject.GetComponent<AstarAI>()._RunPathFinding_Seeker();
 			else unitState = UnitState.Searching;
 			break;
 		case UnitState.Attack:
@@ -57,7 +58,6 @@ public class UnitScript : MonoBehaviour
 	public void Initialize (UnitClass unitClass, Vector2 mapPos)
 	{
 		unitDirection = UnitDirection.N;
-		unitState = UnitState.Searching;
 		unitClass = unitClass;
 		pos = mapPos;
 		moveTarget = pos;
@@ -94,10 +94,14 @@ public class UnitScript : MonoBehaviour
 		}
 		//Parent it to the UnitContainer Object
 		transform.parent = GameObject.Find("UnitContainer").transform;
+
+		//Go Into Searching State
+		unitState = UnitState.Searching;
 	}
 	public static void Instance (UnitClass unitClass, Vector2 mapPos)
 	{
-		GameObject unit = Instantiate(Resources.Load("unit")) as GameObject;//Resources.Load("unitSeeker")) as GameObject;
+		//GameObject unit = Instantiate(Resources.Load("unit")) as GameObject;
+		GameObject unit = Instantiate(Resources.Load("unitSeeker")) as GameObject;
 		unit.GetComponent<UnitScript>().Initialize (unitClass, mapPos);
 		DataCoreScript._Attackers.Add(unit.GetComponent<UnitScript>());
 	}
@@ -137,19 +141,11 @@ public class UnitScript : MonoBehaviour
 				}
 				attackTarget = potTargs [closestTarg];
 				moveTarget = MapScript._WorldToMapPos(attackTarget.transform.position);
+
+				//Initialize Path Finding//
+				//gameObject.GetComponent<AstarAI>()._InitializePathFinding_Seeker();
 		}
 		else unitState = UnitState.Idle;
-		//Make moveTarget be the range distance or less away from the attack target
-		//Vector from unit to the attack target
-//		Vector2 unitToAtkTarg = MapScript._WorldToMapPos(attackTarget.transform.position) - pos;
-//		float magnitude = unitToAtkTarg.magnitude;
-//		if(magnitude > attackRange)
-//		{
-//			Vector2 directionVector = unitToAtkTarg.normalized * magnitude;
-//			moveTarget = MapScript._WorldToMapPos(directionVector);
-//		}
-//		else moveTarget = pos;
-//		Debug.Log("Mag: " + (int)magnitude);
 	}
 	public void RandomMoveTarget ()
 	{

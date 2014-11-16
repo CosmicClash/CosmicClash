@@ -27,16 +27,21 @@ public class StructureScript : MonoBehaviour
 	void Update ()
 	{
 		//State machine
-		if(structState == StructureState.Searching)
+		switch (structState)
 		{
-			if(!attackTarget) FindTarget(DataCoreScript._Attackers);
+		case StructureState.Idle:
+			_Idle();
+			break;
+		case StructureState.Searching:
+			if(!attackTarget) _FindNearestPreferredTarget(DataCoreScript._Attackers);
 			else structState = StructureState.Attack;
-		}
-		if(structState == StructureState.Attack)
-		{
+			break;
+		case StructureState.Attack:
 			if (!attackTarget) structState = StructureState.Searching;
 			else Attack(attackTarget);
-			
+			break;
+		default:
+			break;
 		}
 	}
 	public void Initialize (StructureClass structureClass, Vector2 mapPos)
@@ -60,7 +65,11 @@ public class StructureScript : MonoBehaviour
 		structure.GetComponent<StructureScript>().Initialize (structClass, mapPos);
 		DataCoreScript._Defenders.Add(structure.GetComponent<StructureScript>());
 	}
-	public void FindTarget (List<Component> potentialTargets)
+	public void _Idle ()
+	{
+		//Do Idling stuff here, perhaps with animations
+	}
+	public void _FindNearestPreferredTarget (List<Component> potentialTargets)
 	{
 		//Loop through potential targets and return the closest
 		//First loop through them and get the preferred ones and get the closest of those
@@ -69,19 +78,22 @@ public class StructureScript : MonoBehaviour
 			List<Component> potTargs = potentialTargets;
 			int closestTarg = 0;
 			float smallestDist = (float)MapScript.mapWidth;
+			float dist = 0.0f;
 			for(int i = 0; i < potTargs.Count; i++)
 			{
 				Vector2 hereToThere = new Vector2 (gameObject.transform.position.x - potTargs[i].transform.position.x,
 				                                   gameObject.transform.position.z - potTargs[i].transform.position.z);
-				float dist = hereToThere.magnitude;
+				dist = hereToThere.magnitude;
 				if(dist < smallestDist && dist <= attackRange)
 				{
 					smallestDist = dist;
 					closestTarg = i;
 				}
 			}
-			attackTarget = potTargs [closestTarg];
+			if(dist <= attackRange) attackTarget = potTargs [closestTarg];
+			else attackTarget = null;
 		}
+		//else structState = StructureState.Idle;
 	}
 	/* SOME ATTACKING FUNCTION FOR NOW */
 	public void Attack (Component target)
@@ -97,6 +109,8 @@ public class StructureScript : MonoBehaviour
 		if(hp > 0.0)hp -= dmg;
 		if(hp <= 0.0)
 		{
+			//Regenerate Path Finding Mesh
+			DataCoreScript._GeneratePathFindingMesh();
 			//Destroy(BattleSceneScript._Defenders[0].gameObject);
 			DataCoreScript._Defenders.Remove(this);
 			//Debug.Log(BattleSceneScript._Defenders.Count);

@@ -3,7 +3,11 @@ using System.Collections;
 //Note this line, if it is left out, the script won't know that the class 'Path' exists and it will throw compiler errors
 //This line should always be present at the top of scripts which use pathfinding
 using Pathfinding;
-public class AstarAI : MonoBehaviour {
+public class AstarAI : MonoBehaviour
+{
+	//The Unit Script of the unit this script is attached to
+	private UnitScript unitScript;
+
 	//The point to move to
 	public Vector3 targetPosition;
 	
@@ -22,30 +26,46 @@ public class AstarAI : MonoBehaviour {
 	//The waypoint we are currently moving towards
 	private int currentWaypoint = 0;
 	
-	public void Start () {
+	public void _InitializePathFinding_Seeker ()
+	{
+		unitScript = gameObject.GetComponent<UnitScript>();
+		_LoadNecessaryAIStats();
 		seeker = GetComponent<Seeker>();
 		controller = GetComponent<CharacterController>();
 		
 		//Start a new path to the targetPosition, return the result to the OnPathComplete function
-		seeker.StartPath (transform.position,targetPosition, OnPathComplete);
+		if(seeker) seeker.StartPath (transform.position,targetPosition, OnPathComplete);
 	}
-	
-	public void OnPathComplete (Path p) {
+
+	private void _LoadNecessaryAIStats()
+	{
+		targetPosition	= unitScript.moveTarget;
+		speed			*= unitScript.movementSpeed;
+		//AI PATH SCRIPT
+		gameObject.GetComponent<AIPath>().target = unitScript.attackTarget.transform;
+	}
+
+	public void OnPathComplete (Path p)
+	{
 		Debug.Log ("Yay, we got a path back. Did it have an error? "+p.error);
-		if (!p.error) {
+		if (!p.error)
+		{
 			path = p;
 			//Reset the waypoint counter
 			currentWaypoint = 0;
 		}
 	}
 	
-	public void FixedUpdate () {
-		if (path == null) {
+	public void _RunPathFinding_Seeker ()
+	{
+		if (path == null)
+		{
 			//We have no path to move after yet
 			return;
 		}
 		
-		if (currentWaypoint >= path.vectorPath.Count) {
+		if (currentWaypoint >= path.vectorPath.Count)
+		{
 			Debug.Log ("End Of Path Reached");
 			return;
 		}
@@ -57,7 +77,8 @@ public class AstarAI : MonoBehaviour {
 		
 		//Check if we are close enough to the next waypoint
 		//If we are, proceed to follow the next waypoint
-		if (Vector3.Distance (transform.position,path.vectorPath[currentWaypoint]) < nextWaypointDistance) {
+		if (Vector3.Distance (transform.position,path.vectorPath[currentWaypoint]) < nextWaypointDistance)
+		{
 			currentWaypoint++;
 			return;
 		}
