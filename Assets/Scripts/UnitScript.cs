@@ -8,17 +8,20 @@ public class UnitScript : MonoBehaviour
 	public Vector2 moveTarget;
 	public Component attackTarget;
 	
-	public int hp, maxHp;
-	public int attackPwr;
-	public float attackRange;
-	public float movementSpeed;
-	public int favoriteTarget;
-	public bool isSelected = false;
+	public int		hp, maxHp;
+	public int		attackPwr;
+	public float	attackRange;
+	public float	movementSpeed;
+	public Vector2	directionVector;
+	public int		favoriteTarget;
+	public bool		isSelected = false;
 
 	public enum UnitClass{Unit1, Unit2, Unit3};
 	public enum UnitState{Idle, Move, Searching, Attack, Death};
+	public enum UnitDirection{N, NE, E, SE, S, SW, W, NW};
 	public UnitClass			unitClass;
 	public UnitState			unitState;
+	public UnitDirection		unitDirection;
 
 	public StructureScript.StructureClass preferredTarget;
 
@@ -31,7 +34,7 @@ public class UnitScript : MonoBehaviour
 		//State machine
 		if(unitState == UnitState.Searching)
 		{
-			if(!attackTarget) FindTarget(BattleSceneScript._Structures);
+			if(!attackTarget) FindTarget(DataCoreScript._Defenders);
 			else unitState = UnitState.Move;
 		}
 		if(unitState == UnitState.Move)
@@ -91,7 +94,7 @@ public class UnitScript : MonoBehaviour
 	{
 		GameObject unit = Instantiate(Resources.Load("unit")) as GameObject;
 		unit.GetComponent<UnitScript>().Initialize (unitClass, mapPos);
-		BattleSceneScript._Units.Add(unit.GetComponent<UnitScript>());
+		DataCoreScript._Attackers.Add(unit.GetComponent<UnitScript>());
 	}
 	public void Select()
 	{
@@ -179,9 +182,7 @@ public class UnitScript : MonoBehaviour
 		if(hp > 0.0)hp -= dmg;
 		if(hp <= 0.0)
 		{
-			//Destroy(BattleSceneScript._Structures[0].gameObject);
-			BattleSceneScript._Units.Remove(this);
-			//Debug.Log(BattleSceneScript._Units.Count);
+			DataCoreScript._Attackers.Remove(this);
 			Destroy(gameObject);
 		}
 	}

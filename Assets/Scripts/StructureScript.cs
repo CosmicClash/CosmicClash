@@ -29,7 +29,7 @@ public class StructureScript : MonoBehaviour
 		//State machine
 		if(structState == StructureState.Searching)
 		{
-			if(!attackTarget) FindTarget(BattleSceneScript._Units);
+			if(!attackTarget) FindTarget(DataCoreScript._Attackers);
 			else structState = StructureState.Attack;
 		}
 		if(structState == StructureState.Attack)
@@ -58,7 +58,7 @@ public class StructureScript : MonoBehaviour
 	{
 		GameObject structure = Instantiate(Resources.Load("structure")) as GameObject;
 		structure.GetComponent<StructureScript>().Initialize (structClass, mapPos);
-		BattleSceneScript._Structures.Add(structure.GetComponent<StructureScript>());
+		DataCoreScript._Defenders.Add(structure.GetComponent<StructureScript>());
 	}
 	public void FindTarget (List<Component> potentialTargets)
 	{
@@ -97,9 +97,9 @@ public class StructureScript : MonoBehaviour
 		if(hp > 0.0)hp -= dmg;
 		if(hp <= 0.0)
 		{
-			//Destroy(BattleSceneScript._Structures[0].gameObject);
-			BattleSceneScript._Structures.Remove(this);
-			//Debug.Log(BattleSceneScript._Structures.Count);
+			//Destroy(BattleSceneScript._Defenders[0].gameObject);
+			DataCoreScript._Defenders.Remove(this);
+			//Debug.Log(BattleSceneScript._Defenders.Count);
 			Destroy(gameObject);
 		}
 	}

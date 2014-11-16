@@ -5,13 +5,10 @@ using System.Collections.Generic;
 public class BattleSceneScript : MonoBehaviour
 {
 	/*List of Game Objects*/
-	public GameObject mapObject;
 	public UnitScript.UnitClass spawnType;
 	public List<int> unit;
-	public static List<Component> _Structures	= new List<Component>();
-	public static List<Component> _Units		= new List<Component>();
 	public enum BattleState{Initializing = 0, Main = 1, DefenderWin = 2, AttackerWin = 3};
-	public BattleState battleState				= BattleState.Initializing;
+	public BattleState battleState	= BattleState.Initializing;
 
 	private	RaycastHit	hit;
 	
@@ -88,7 +85,7 @@ public class BattleSceneScript : MonoBehaviour
 			}
 		}
 		//Add random structures
-		if(Time.frameCount %20 == 1) StructureScript.Instance(StructureScript.StructureClass.Resource,	MapScript._RandomMapPos() );
+		//if(Time.frameCount %20 == 1) StructureScript.Instance(StructureScript.StructureClass.Resource,	MapScript._RandomMapPos() );
 	}
 
 	private void _LoadDefenderBase ()

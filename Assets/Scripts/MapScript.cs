@@ -11,17 +11,13 @@ public class MapScript : MonoBehaviour
 	public static float	tileHeight		= 1.0f;
 	public static float	actualMapWidth	= 40.0f;		//Size of map
 	public static float	actualMapHeight = 40.0f;
-	private Vector2 worldUp = new Vector2(1,1);
 	public float tileAmount = 40.0f;
 
 	void Start ()
 	{
-		worldUp.Normalize();
 		actualMapWidth		= mapWidth	* tileWidth;
 		actualMapHeight		= mapHeight * tileHeight;
 		map = this.gameObject;
-		map.GetComponent<MeshRenderer>().material.mainTextureScale = new Vector2(tileAmount/2.0f, tileAmount/2.0f);
-		map.GetComponent<Transform>().localScale = new Vector3 (tileAmount * tileWidth, tileAmount * tileHeight, tileAmount);
 	}
 
 	/*UTILITY FUNCTIONS*/

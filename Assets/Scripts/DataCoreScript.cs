@@ -2,11 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class DataCoreScript : MonoBehaviour
+public static class DataCoreScript
 {
 	/*Timer*/
-	public static TimerScript timer;
+	//public static float _MaxTime;
 	/*List of Game Objects*/
+	public static List<Component> _Defenders	= new List<Component>();
+	public static List<Component> _Attackers	= new List<Component>();
 
 
 	/*Debugging*/
