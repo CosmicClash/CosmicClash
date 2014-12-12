@@ -1,0 +1,751 @@
+fileFormatVersion: 2
+guid: fc0a9bda24268fe418a6bff10e91baee
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: thief_idle75x85_0
+    21300002: thief_idle75x85_1
+    21300004: thief_idle75x85_2
+    21300006: thief_idle75x85_3
+    21300008: thief_idle75x85_4
+    21300010: thief_idle75x85_5
+    21300012: thief_idle75x85_6
+    21300014: thief_idle75x85_7
+    21300016: thief_idle75x85_8
+    21300018: thief_idle75x85_9
+    21300020: thief_idle75x85_10
+    21300022: thief_idle75x85_11
+    21300024: thief_idle75x85_12
+    21300026: thief_idle75x85_13
+    21300028: thief_idle75x85_14
+    21300030: thief_idle75x85_15
+    21300032: thief_idle75x85_16
+    21300034: thief_idle75x85_17
+    21300036: thief_idle75x85_18
+    21300038: thief_idle75x85_19
+    21300040: thief_idle75x85_20
+    21300042: thief_idle75x85_21
+    21300044: thief_idle75x85_22
+    21300046: thief_idle75x85_23
+    21300048: thief_idle75x85_24
+    21300050: thief_idle75x85_25
+    21300052: thief_idle75x85_26
+    21300054: thief_idle75x85_27
+    21300056: thief_idle75x85_28
+    21300058: thief_idle75x85_29
+    21300060: thief_idle75x85_30
+    21300062: thief_idle75x85_31
+    21300064: thief_idle75x85_32
+    21300066: thief_idle75x85_33
+    21300068: thief_idle75x85_34
+    21300070: thief_idle75x85_35
+    21300072: thief_idle75x85_36
+    21300074: thief_idle75x85_37
+    21300076: thief_idle75x85_38
+    21300078: thief_idle75x85_39
+    21300080: thief_idle75x85_40
+    21300082: thief_idle75x85_41
+    21300084: thief_idle75x85_42
+    21300086: thief_idle75x85_43
+    21300088: thief_idle75x85_44
+    21300090: thief_idle75x85_45
+    21300092: thief_idle75x85_46
+    21300094: thief_idle75x85_47
+    21300096: thief_idle75x85_48
+    21300098: thief_idle75x85_49
+    21300100: thief_idle75x85_50
+    21300102: thief_idle75x85_51
+    21300104: thief_idle75x85_52
+    21300106: thief_idle75x85_53
+    21300108: thief_idle75x85_54
+    21300110: thief_idle75x85_55
+    21300112: thief_idle75x85_56
+    21300114: thief_idle75x85_57
+    21300116: thief_idle75x85_58
+    21300118: thief_idle75x85_59
+    21300120: thief_idle75x85_60
+    21300122: thief_idle75x85_61
+    21300124: thief_idle75x85_62
+    21300126: thief_idle75x85_63
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: thief_idle75x85_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 595
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 595
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 595
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_3
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 595
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_4
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 595
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_5
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 595
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_6
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 595
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_7
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 595
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 510
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_9
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 510
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_10
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 510
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_11
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 510
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_12
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 510
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_13
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 510
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_14
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 510
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_15
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 510
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 425
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_17
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 425
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_18
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 425
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_19
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 425
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_20
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 425
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_21
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 425
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_22
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 425
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_23
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 425
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_25
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 340
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_26
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 340
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_27
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 340
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_28
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 340
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_29
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 340
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_30
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 340
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_31
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 340
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 255
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_33
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 255
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_34
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 255
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_35
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 255
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_36
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 255
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_37
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 255
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_38
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 255
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_39
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 255
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 170
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_41
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 170
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_42
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 170
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_43
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 170
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_44
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 170
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_45
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 170
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_46
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 170
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_47
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 170
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 85
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_49
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 85
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_50
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 85
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_51
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 85
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_52
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 85
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_53
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 85
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_54
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 85
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_55
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 85
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_57
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_58
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_59
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 0
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_60
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_61
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_62
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_idle75x85_63
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 0
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

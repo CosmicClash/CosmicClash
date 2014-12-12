@@ -1,0 +1,751 @@
+fileFormatVersion: 2
+guid: 2c9fe608549838842ae7e436ba5b4bf5
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: guadrian_walk60x85_0
+    21300002: guadrian_walk60x85_1
+    21300004: guadrian_walk60x85_2
+    21300006: guadrian_walk60x85_3
+    21300008: guadrian_walk60x85_4
+    21300010: guadrian_walk60x85_5
+    21300012: guadrian_walk60x85_6
+    21300014: guadrian_walk60x85_7
+    21300016: guadrian_walk60x85_8
+    21300018: guadrian_walk60x85_9
+    21300020: guadrian_walk60x85_10
+    21300022: guadrian_walk60x85_11
+    21300024: guadrian_walk60x85_12
+    21300026: guadrian_walk60x85_13
+    21300028: guadrian_walk60x85_14
+    21300030: guadrian_walk60x85_15
+    21300032: guadrian_walk60x85_16
+    21300034: guadrian_walk60x85_17
+    21300036: guadrian_walk60x85_18
+    21300038: guadrian_walk60x85_19
+    21300040: guadrian_walk60x85_20
+    21300042: guadrian_walk60x85_21
+    21300044: guadrian_walk60x85_22
+    21300046: guadrian_walk60x85_23
+    21300048: guadrian_walk60x85_24
+    21300050: guadrian_walk60x85_25
+    21300052: guadrian_walk60x85_26
+    21300054: guadrian_walk60x85_27
+    21300056: guadrian_walk60x85_28
+    21300058: guadrian_walk60x85_29
+    21300060: guadrian_walk60x85_30
+    21300062: guadrian_walk60x85_31
+    21300064: guadrian_walk60x85_32
+    21300066: guadrian_walk60x85_33
+    21300068: guadrian_walk60x85_34
+    21300070: guadrian_walk60x85_35
+    21300072: guadrian_walk60x85_36
+    21300074: guadrian_walk60x85_37
+    21300076: guadrian_walk60x85_38
+    21300078: guadrian_walk60x85_39
+    21300080: guadrian_walk60x85_40
+    21300082: guadrian_walk60x85_41
+    21300084: guadrian_walk60x85_42
+    21300086: guadrian_walk60x85_43
+    21300088: guadrian_walk60x85_44
+    21300090: guadrian_walk60x85_45
+    21300092: guadrian_walk60x85_46
+    21300094: guadrian_walk60x85_47
+    21300096: guadrian_walk60x85_48
+    21300098: guadrian_walk60x85_49
+    21300100: guadrian_walk60x85_50
+    21300102: guadrian_walk60x85_51
+    21300104: guadrian_walk60x85_52
+    21300106: guadrian_walk60x85_53
+    21300108: guadrian_walk60x85_54
+    21300110: guadrian_walk60x85_55
+    21300112: guadrian_walk60x85_56
+    21300114: guadrian_walk60x85_57
+    21300116: guadrian_walk60x85_58
+    21300118: guadrian_walk60x85_59
+    21300120: guadrian_walk60x85_60
+    21300122: guadrian_walk60x85_61
+    21300124: guadrian_walk60x85_62
+    21300126: guadrian_walk60x85_63
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: guadrian_walk60x85_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 595
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 595
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 595
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 595
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 595
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_5
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 595
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_6
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 595
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_7
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 595
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 510
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_9
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 510
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_10
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 510
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_11
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 510
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_12
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 510
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_13
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 510
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_14
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 510
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_15
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 510
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 425
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_17
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 425
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_18
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 425
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_19
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 425
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_20
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 425
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_21
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 425
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_22
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 425
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_23
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 425
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_25
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 340
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_26
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 340
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_27
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 340
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_28
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 340
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_29
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 340
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_30
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 340
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_31
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 340
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 255
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_33
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 255
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_34
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 255
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_35
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 255
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_36
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 255
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_37
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 255
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_38
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 255
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_39
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 255
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 170
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_41
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 170
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_42
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 170
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_43
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 170
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_44
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 170
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_45
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 170
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_46
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 170
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_47
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 170
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 85
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_49
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 85
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_50
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 85
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_51
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 85
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_52
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 85
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_53
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 85
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_54
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 85
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_55
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 85
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_57
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_58
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_59
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_60
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_61
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_62
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: guadrian_walk60x85_63
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
