@@ -1,0 +1,839 @@
+fileFormatVersion: 2
+guid: b49f2968ce44f9b4ab969afac6cd4175
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: mech_walk290x240_0
+    21300002: mech_walk290x240_1
+    21300004: mech_walk290x240_2
+    21300006: mech_walk290x240_3
+    21300008: mech_walk290x240_4
+    21300010: mech_walk290x240_5
+    21300012: mech_walk290x240_6
+    21300014: mech_walk290x240_7
+    21300016: mech_walk290x240_8
+    21300018: mech_walk290x240_9
+    21300020: mech_walk290x240_10
+    21300022: mech_walk290x240_11
+    21300024: mech_walk290x240_12
+    21300026: mech_walk290x240_13
+    21300028: mech_walk290x240_14
+    21300030: mech_walk290x240_15
+    21300032: mech_walk290x240_16
+    21300034: mech_walk290x240_17
+    21300036: mech_walk290x240_18
+    21300038: mech_walk290x240_19
+    21300040: mech_walk290x240_20
+    21300042: mech_walk290x240_21
+    21300044: mech_walk290x240_22
+    21300046: mech_walk290x240_23
+    21300048: mech_walk290x240_24
+    21300050: mech_walk290x240_25
+    21300052: mech_walk290x240_26
+    21300054: mech_walk290x240_27
+    21300056: mech_walk290x240_28
+    21300058: mech_walk290x240_29
+    21300060: mech_walk290x240_30
+    21300062: mech_walk290x240_31
+    21300064: mech_walk290x240_32
+    21300066: mech_walk290x240_33
+    21300068: mech_walk290x240_34
+    21300070: mech_walk290x240_35
+    21300072: mech_walk290x240_36
+    21300074: mech_walk290x240_37
+    21300076: mech_walk290x240_38
+    21300078: mech_walk290x240_39
+    21300080: mech_walk290x240_40
+    21300082: mech_walk290x240_41
+    21300084: mech_walk290x240_42
+    21300086: mech_walk290x240_43
+    21300088: mech_walk290x240_44
+    21300090: mech_walk290x240_45
+    21300092: mech_walk290x240_46
+    21300094: mech_walk290x240_47
+    21300096: mech_walk290x240_48
+    21300098: mech_walk290x240_49
+    21300100: mech_walk290x240_50
+    21300102: mech_walk290x240_51
+    21300104: mech_walk290x240_52
+    21300106: mech_walk290x240_53
+    21300108: mech_walk290x240_54
+    21300110: mech_walk290x240_55
+    21300112: mech_walk290x240_56
+    21300114: mech_walk290x240_57
+    21300116: mech_walk290x240_58
+    21300118: mech_walk290x240_59
+    21300120: mech_walk290x240_60
+    21300122: mech_walk290x240_61
+    21300124: mech_walk290x240_62
+    21300126: mech_walk290x240_63
+    21300128: mech_walk290x240_64
+    21300130: mech_walk290x240_65
+    21300132: mech_walk290x240_66
+    21300134: mech_walk290x240_67
+    21300136: mech_walk290x240_68
+    21300138: mech_walk290x240_69
+    21300140: mech_walk290x240_70
+    21300142: mech_walk290x240_71
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: mech_walk290x240_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1680
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_1
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1680
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_2
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1680
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_3
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1680
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_4
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 1680
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_5
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 1680
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_6
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1680
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_7
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 1680
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_8
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 1680
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_10
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1440
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_11
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1440
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_12
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1440
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_13
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 1440
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_14
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 1440
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_15
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1440
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_16
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 1440
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_17
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 1440
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_19
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1200
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_20
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1200
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_21
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1200
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_22
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 1200
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_23
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 1200
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_24
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1200
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_25
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 1200
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_26
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 1200
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_28
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 960
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_29
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 960
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_30
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 960
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_31
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 960
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_32
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 960
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_33
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 960
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_34
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 960
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_35
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 960
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_37
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 720
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_38
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 720
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_39
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 720
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_40
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 720
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_41
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 720
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_42
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 720
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_43
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 720
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_44
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 720
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_46
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 480
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_47
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 480
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_48
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 480
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_49
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 480
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_50
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 480
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_51
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 480
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_52
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 480
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_53
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 480
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_55
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 240
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_56
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 240
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_57
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 240
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_58
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 240
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_59
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 240
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_60
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 240
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_61
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 240
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_62
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 240
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_64
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 0
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_65
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 0
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_66
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 0
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_67
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 0
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_68
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 0
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_69
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 0
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_70
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 0
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mech_walk290x240_71
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 0
+        width: 290
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

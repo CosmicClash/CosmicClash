@@ -6,7 +6,7 @@ public class CameraScript : MonoBehaviour
 	public float maxSize = 1.0f;
 	public float minSize = 0.3f;
 	public float speed = 0.001f;
-	private float currentSize;
+	//private float currentSize;
 	
 	public float dragSpeed = 2;
 	private Vector3 dragOrigin;
@@ -15,7 +15,7 @@ public class CameraScript : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		currentSize = (maxSize + minSize) / 2.0f;
+		//currentSize = (maxSize + minSize) / 2.0f;
 	}
 	
 	// Update is called once per frame

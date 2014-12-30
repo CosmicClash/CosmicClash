@@ -4,30 +4,39 @@ using System.Collections.Generic;
 
 public class UnitScript : MonoBehaviour
 {
-	public Vector2 pos;
-	public Vector2 moveTarget;
-	public Component attackTarget;
-	
-	public int		hp, maxHp;
-	public int		attackPwr;
-	public float	attackRange;
-	public float	movementSpeed;
-	public Vector2	directionVector;
-	public int		favoriteTarget;
-	public bool		isSelected = false;
+	//Object Data
+	public Vector2		pos;
+	private Animator	anim;
+	public bool			isSelected = false;
 
-	public enum UnitClass{Unit1, Unit2, Unit3};
-	public enum UnitState{Idle, Move, Searching, Attack, Death};
+	//Unit Specific Information
+	public int			hp, maxHp;
+	public int			attackPwr;
+	public float		attackRange;
+	public float		movementSpeed;
+	public Vector2		directionVector;
+
+	public StructureScript.StructureClass preferredTarget;
+	public Component	attackTarget;
+
+	//States
+	public enum UnitClass{GroundTroopUnit, RangerUnit, ThiefUnit, MechUnit, GuardianUnit};
+	public enum UnitState{Idle = 0, Move = 1, Attack = 2, Searching = 3, Death = 4};
 	public enum UnitDirection{N = 0, NE = 1, E = 2, SE = 3, S = 4, SW = 5, W = 6, NW = 7};
 	public UnitClass			unitClass;
 	public UnitState			unitState;
 	public UnitDirection		unitDirection;
 
-	public StructureScript.StructureClass preferredTarget;
 
+	//Path Finding Information
+	//moveTargbet comes from attackTarget
+	public Vector2		moveTarget;
+	public Vector2		currentNode;
+	public Vector2		NextNode;
 
 	void Awake ()
 	{
+
 	}
 	void Update ()
 	{
@@ -39,85 +48,133 @@ public class UnitScript : MonoBehaviour
 			break;
 		case UnitState.Searching:
 			if(!attackTarget) _FindNearestPreferredTarget(DataCoreScript._Defenders);
-			else unitState = UnitState.Move;
+			else if (attackTarget)
+			{
+				unitState = UnitState.Move;
+				anim.SetInteger("animState", (int)unitState);
+			}
 			break;
 		case UnitState.Move:
 			if(attackTarget && moveTarget != null) MoveUnit();
-			//if(attackTarget && moveTarget != null) gameObject.GetComponent<AstarAI>()._RunPathFinding_Seeker();
-			else unitState = UnitState.Searching;
+			else
+			{
+				unitState = UnitState.Searching;
+			}
 			break;
 		case UnitState.Attack:
 			if (!attackTarget) unitState = UnitState.Searching;
-			else Attack(attackTarget);
+			else 
+			{
+				Attack(attackTarget);
+			}
 			break;
 		default:
 			break;
 		}
 
 	}
-	public void Initialize (UnitClass unitClass, Vector2 mapPos)
+	public void Initialize (UnitClass unitClassType, Vector2 mapPos)
 	{
 		unitDirection = UnitDirection.N;
-		unitClass = unitClass;
+		unitClass = unitClassType;
 		pos = mapPos;
 		moveTarget = pos;
 		gameObject.transform.position = MapScript._MapToWorldPos(mapPos);
-		if(unitClass == UnitClass.Unit1)
+
+		switch (unitClass)
 		{
+		case UnitClass.GroundTroopUnit:
 			maxHp = 5000;
 			hp = maxHp;
 			movementSpeed	= 5.0f;
-			attackPwr = 10;
-			attackRange = 1.0f;
-			preferredTarget = StructureScript.StructureClass.Generic;
-			GraphicsCoreScript._SetMaterial(gameObject, "Unit1Mat");
-		}
-		else if(unitClass == UnitClass.Unit2)
-		{
-			maxHp = 4000;
-			hp = maxHp;
-			movementSpeed	= 9.0f;
-			attackPwr = 5;
-			attackRange = 4.0f;
-			preferredTarget = StructureScript.StructureClass.Resource;
-			GraphicsCoreScript._SetMaterial(gameObject, "Unit2Mat");
-		}
-		else if(unitClass == UnitClass.Unit3)
-		{
-			maxHp = 3000;
-			hp = maxHp;
-			movementSpeed	= 4.0f;
 			attackPwr = 30;
 			attackRange = 1.0f;
-			preferredTarget = StructureScript.StructureClass.Offensive;
-			GraphicsCoreScript._SetMaterial(gameObject, "Unit3Mat");
+			preferredTarget = StructureScript.StructureClass.Generic;
+			break;
+		case UnitClass.RangerUnit:
+			maxHp = 4000;
+			hp = maxHp;
+			movementSpeed	= 7.0f;
+			attackPwr = 20;
+			attackRange = 4.0f;
+			preferredTarget = StructureScript.StructureClass.Generic;
+			break;
+		case UnitClass.ThiefUnit:
+			maxHp = 3000;
+			hp = maxHp;
+			movementSpeed	= 9.0f;
+			attackPwr = 15;
+			attackRange = 1.0f;
+			preferredTarget = StructureScript.StructureClass.Resource;
+			break;
+		case UnitClass.GuardianUnit:
+			maxHp = 3000;
+			hp = maxHp;
+			movementSpeed	= 6.0f;
+			attackPwr = -15;
+			attackRange = 5.0f;
+			preferredTarget = StructureScript.StructureClass.Resource;
+			break;
+		case UnitClass.MechUnit:
+			maxHp = 7000;
+			hp = maxHp;
+			movementSpeed	= 3.0f;
+			attackPwr = 50;
+			attackRange = 1.0f;
+			preferredTarget = StructureScript.StructureClass.Resource;
+			break;
+		default:
+			break;
 		}
+
 		//Parent it to the UnitContainer Object
 		transform.parent = GameObject.Find("UnitContainer").transform;
 
+		//Set the Animator
+		anim = transform.GetComponent<Animator>();
+		anim.SetFloat("X", 0.0f);
+		anim.SetFloat("Y", 0.0f);
+		anim.SetInteger("animState", (int)unitState);
+
 		//Go Into Searching State
 		unitState = UnitState.Searching;
+
+		//Path Finding
+		moveTarget	= pos;
+		NextNode	= pos;
+		currentNode	= pos;
+
 	}
 	public static void Instance (UnitClass unitClass, Vector2 mapPos)
 	{
-		//GameObject unit = Instantiate(Resources.Load("unit")) as GameObject;
-		GameObject unit = Instantiate(Resources.Load("unitSeeker")) as GameObject;
+		string unitType = null;
+		switch (unitClass)
+		{
+		case UnitClass.GroundTroopUnit:
+			unitType = "GroundTroopUnit";
+			break;
+		case UnitClass.RangerUnit:
+			unitType = "RangerUnit";
+			break;
+		case UnitClass.ThiefUnit:
+			unitType = "ThiefUnit";
+			break;
+		case UnitClass.MechUnit:
+			unitType = "MechUnit";
+			break;
+		case UnitClass.GuardianUnit:
+			unitType = "GuardianUnit";
+			break;
+			default:
+			break;
+		}
+		GameObject unit = Instantiate(Resources.Load("Units/" + unitType)) as GameObject;
 		unit.GetComponent<UnitScript>().Initialize (unitClass, mapPos);
 		DataCoreScript._Attackers.Add(unit.GetComponent<UnitScript>());
 	}
-	public void Select()
-	{
-		isSelected = true;
-	}
-
-	public void Deselect()
-	{
-		isSelected = false;
-	}
-
 	public void _Idle ()
 	{
-		//Play Idle Animation
+
 	}
 	public void _FindNearestPreferredTarget (List<Component> potentialTargets)
 	{
@@ -139,17 +196,34 @@ public class UnitScript : MonoBehaviour
 						closestTarg = i;
 					}
 				}
-				attackTarget = potTargs [closestTarg];
-				moveTarget = MapScript._WorldToMapPos(attackTarget.transform.position);
 
-				//Initialize Path Finding//
-				//gameObject.GetComponent<AstarAI>()._InitializePathFinding_Seeker();
+			attackTarget = potTargs [closestTarg];
+			moveTarget = MapScript._WorldToMapPos(attackTarget.transform.position);
+
+			//PATH FINDING STUFF
+			Vector2 atkPos = attackTarget.GetComponent<StructureScript>().pos;
+//			PathFinding.Grid.buildPath((int)pos.x, (int)pos.y, (int)atkPos.x, (int)atkPos.y);
+
+			//Set Unit Direction for sprite drawing
+			Vector2 unitToTarget = atkPos - pos;
+			unitToTarget.Normalize();
+			anim.SetFloat("X", unitToTarget.x);
+			anim.SetFloat("Y", unitToTarget.y);
+				
 		}
-		else unitState = UnitState.Idle;
+		else
+		{
+			unitState = UnitState.Idle;
+			anim.SetInteger("animState", (int)unitState);
+		}
 	}
 	public void RandomMoveTarget ()
 	{
 		moveTarget = MapScript._RandomMapPos();
+	}
+	public void _Move(Vector2 moveTarget)
+	{
+
 	}
 	public void MoveUnit()
 	{
@@ -160,13 +234,18 @@ public class UnitScript : MonoBehaviour
 			Vector2 unitToTarget = moveTarget - pos;
 			unitToTarget.Normalize();
 
-			gameObject.transform.Translate(unitToTarget.x * Time.deltaTime * movementSpeed, 0.0f, unitToTarget.y * Time.deltaTime * movementSpeed);
+			gameObject.transform.Translate(unitToTarget.x * Time.deltaTime * movementSpeed, unitToTarget.y * Time.deltaTime * movementSpeed, 0.0f);
 			pos = MapScript._WorldToMapPos(gameObject.transform.position);
 
 			//Set Unit Direction for sprite drawing
-			//Use Switch statement
+			anim.SetFloat("X", unitToTarget.x);
+			anim.SetFloat("Y", unitToTarget.y);
 		}
-		else unitState = UnitState.Attack;
+		else
+		{
+			unitState = UnitState.Attack;
+			anim.SetInteger("animState", (int)unitState);
+		}
 
 	}
 	private bool AmIWithinRange (Component atkTarget)
@@ -174,6 +253,10 @@ public class UnitScript : MonoBehaviour
 		Vector2 atkTargMapPos = MapScript._WorldToMapPos(atkTarget.transform.position);
 		if(MapScript._Distance_int(pos, atkTargMapPos) <= attackRange)
 		{
+			//Set Unit Direction for sprite drawing
+			//atkTargMapPos.Normalize();
+			//anim.SetFloat("X", atkTargMapPos.x);
+			//anim.SetFloat("Y", atkTargMapPos.y);
 			return true;
 		}
 		else return false;

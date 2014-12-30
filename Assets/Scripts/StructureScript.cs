@@ -55,13 +55,13 @@ public class StructureScript : MonoBehaviour
 		pos = mapPos;
 		obj = transform.gameObject;
 		obj.transform.position = MapScript._MapToWorldPos(pos);
-		GraphicsCoreScript._SetMaterial(obj, "struct1Mat");
+		//GraphicsCoreScript._SetMaterial(obj, "struct1Mat");
 		//Parent it to the UnitContainer Object
 		transform.parent = GameObject.Find("StructureContainer").transform;
 	}
 	public static void Instance (StructureClass structClass, Vector2 mapPos)
 	{
-		GameObject structure = Instantiate(Resources.Load("structureObstacle")) as GameObject;
+		GameObject structure = Instantiate(Resources.Load("Structures/structure")) as GameObject;
 		structure.GetComponent<StructureScript>().Initialize (structClass, mapPos);
 		DataCoreScript._Defenders.Add(structure.GetComponent<StructureScript>());
 	}
@@ -107,14 +107,29 @@ public class StructureScript : MonoBehaviour
 	public void TakeDamage (int dmg)
 	{
 		if(hp > 0.0)hp -= dmg;
+		//If the object's health falls below zero...
 		if(hp <= 0.0)
 		{
-			//Regenerate Path Finding Mesh
-			DataCoreScript._GeneratePathFindingMesh();
-			//Destroy(BattleSceneScript._Defenders[0].gameObject);
+			//Update Path Finding Mesh
+			PathFinding.Grid.getNode((int)pos.x, (int)pos.y).enabled = true;
+
+			//Remove the structure from the list of defending objects in the scene
 			DataCoreScript._Defenders.Remove(this);
-			//Debug.Log(BattleSceneScript._Defenders.Count);
 			Destroy(gameObject);
 		}
 	}
 }
+
+/*
+    IEnumerator Start() {
+        StartCoroutine("DoSomething", 2.0F);
+        yield return new WaitForSeconds(1);
+        StopCoroutine("DoSomething");
+    }
+    IEnumerator DoSomething(float someParameter) {
+        while (true) {
+            print("DoSomething Loop");
+            yield return null;
+        }
+    }
+ */

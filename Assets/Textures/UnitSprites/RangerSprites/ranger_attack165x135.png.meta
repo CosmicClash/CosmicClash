@@ -1,0 +1,1191 @@
+fileFormatVersion: 2
+guid: 1210bdfaef1eff443a569ce207a1cfaf
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ranger_attack165x135_0
+    21300002: ranger_attack165x135_1
+    21300004: ranger_attack165x135_2
+    21300006: ranger_attack165x135_3
+    21300008: ranger_attack165x135_4
+    21300010: ranger_attack165x135_5
+    21300012: ranger_attack165x135_6
+    21300014: ranger_attack165x135_7
+    21300016: ranger_attack165x135_8
+    21300018: ranger_attack165x135_9
+    21300020: ranger_attack165x135_10
+    21300022: ranger_attack165x135_11
+    21300024: ranger_attack165x135_12
+    21300026: ranger_attack165x135_13
+    21300028: ranger_attack165x135_14
+    21300030: ranger_attack165x135_15
+    21300032: ranger_attack165x135_16
+    21300034: ranger_attack165x135_17
+    21300036: ranger_attack165x135_18
+    21300038: ranger_attack165x135_19
+    21300040: ranger_attack165x135_20
+    21300042: ranger_attack165x135_21
+    21300044: ranger_attack165x135_22
+    21300046: ranger_attack165x135_23
+    21300048: ranger_attack165x135_24
+    21300050: ranger_attack165x135_25
+    21300052: ranger_attack165x135_26
+    21300054: ranger_attack165x135_27
+    21300056: ranger_attack165x135_28
+    21300058: ranger_attack165x135_29
+    21300060: ranger_attack165x135_30
+    21300062: ranger_attack165x135_31
+    21300064: ranger_attack165x135_32
+    21300066: ranger_attack165x135_33
+    21300068: ranger_attack165x135_34
+    21300070: ranger_attack165x135_35
+    21300072: ranger_attack165x135_36
+    21300074: ranger_attack165x135_37
+    21300076: ranger_attack165x135_38
+    21300078: ranger_attack165x135_39
+    21300080: ranger_attack165x135_40
+    21300082: ranger_attack165x135_41
+    21300084: ranger_attack165x135_42
+    21300086: ranger_attack165x135_43
+    21300088: ranger_attack165x135_44
+    21300090: ranger_attack165x135_45
+    21300092: ranger_attack165x135_46
+    21300094: ranger_attack165x135_47
+    21300096: ranger_attack165x135_48
+    21300098: ranger_attack165x135_49
+    21300100: ranger_attack165x135_50
+    21300102: ranger_attack165x135_51
+    21300104: ranger_attack165x135_52
+    21300106: ranger_attack165x135_53
+    21300108: ranger_attack165x135_54
+    21300110: ranger_attack165x135_55
+    21300112: ranger_attack165x135_56
+    21300114: ranger_attack165x135_57
+    21300116: ranger_attack165x135_58
+    21300118: ranger_attack165x135_59
+    21300120: ranger_attack165x135_60
+    21300122: ranger_attack165x135_61
+    21300124: ranger_attack165x135_62
+    21300126: ranger_attack165x135_63
+    21300128: ranger_attack165x135_64
+    21300130: ranger_attack165x135_65
+    21300132: ranger_attack165x135_66
+    21300134: ranger_attack165x135_67
+    21300136: ranger_attack165x135_68
+    21300138: ranger_attack165x135_69
+    21300140: ranger_attack165x135_70
+    21300142: ranger_attack165x135_71
+    21300144: ranger_attack165x135_72
+    21300146: ranger_attack165x135_73
+    21300148: ranger_attack165x135_74
+    21300150: ranger_attack165x135_75
+    21300152: ranger_attack165x135_76
+    21300154: ranger_attack165x135_77
+    21300156: ranger_attack165x135_78
+    21300158: ranger_attack165x135_79
+    21300160: ranger_attack165x135_80
+    21300162: ranger_attack165x135_81
+    21300164: ranger_attack165x135_82
+    21300166: ranger_attack165x135_83
+    21300168: ranger_attack165x135_84
+    21300170: ranger_attack165x135_85
+    21300172: ranger_attack165x135_86
+    21300174: ranger_attack165x135_87
+    21300176: ranger_attack165x135_88
+    21300178: ranger_attack165x135_89
+    21300180: ranger_attack165x135_90
+    21300182: ranger_attack165x135_91
+    21300184: ranger_attack165x135_92
+    21300186: ranger_attack165x135_93
+    21300188: ranger_attack165x135_94
+    21300190: ranger_attack165x135_95
+    21300192: ranger_attack165x135_96
+    21300194: ranger_attack165x135_97
+    21300196: ranger_attack165x135_98
+    21300198: ranger_attack165x135_99
+    21300200: ranger_attack165x135_100
+    21300202: ranger_attack165x135_101
+    21300204: ranger_attack165x135_102
+    21300206: ranger_attack165x135_103
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ranger_attack165x135_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 945
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_1
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 945
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_2
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 945
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_3
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 945
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_4
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 945
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_5
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 945
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_6
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 945
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_7
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 945
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_8
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 945
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_9
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 945
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_10
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 945
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_11
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 945
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_12
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 945
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 810
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_14
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 810
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_15
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 810
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_16
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 810
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_17
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 810
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_18
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 810
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_19
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 810
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_20
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 810
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_21
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 810
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_22
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 810
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_23
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 810
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_24
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 810
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_25
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 810
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 675
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_27
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 675
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_28
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 675
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_29
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 675
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_30
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 675
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_31
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 675
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_32
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 675
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_33
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 675
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_34
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 675
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_35
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 675
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_36
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 675
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_37
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 675
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_38
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 675
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_40
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 540
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_41
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 540
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_42
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 540
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_43
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 540
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_44
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 540
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_45
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 540
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_46
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 540
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_47
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 540
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_48
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 540
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_49
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 540
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_50
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 540
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_51
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 540
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 405
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_53
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 405
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_54
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 405
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_55
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 405
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_56
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 405
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_57
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 405
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_58
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 405
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_59
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 405
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_60
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 405
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_61
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 405
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_62
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 405
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_63
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 405
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_64
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 405
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_66
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 270
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_67
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 270
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_68
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 270
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_69
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 270
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_70
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 270
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_71
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 270
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_72
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 270
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_73
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 270
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_74
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 270
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_75
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 270
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_76
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 270
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_77
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 270
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 135
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_79
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 135
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_80
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 135
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_81
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 135
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_82
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 135
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_83
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 135
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_84
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 135
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_85
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 135
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_86
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 135
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_87
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 135
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_88
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 135
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_89
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 135
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_90
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 135
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_92
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 0
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_93
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_94
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 0
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_95
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 0
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_96
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 0
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_97
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 0
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_98
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 0
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_99
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 0
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_100
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 0
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_101
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 0
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_102
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 0
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ranger_attack165x135_103
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 0
+        width: 165
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

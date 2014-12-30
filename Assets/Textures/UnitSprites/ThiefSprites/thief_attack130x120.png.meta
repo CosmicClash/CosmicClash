@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 761965302408acc4280919d8e2979278
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: thief_attack130x120_0
+    21300002: thief_attack130x120_1
+    21300004: thief_attack130x120_2
+    21300006: thief_attack130x120_3
+    21300008: thief_attack130x120_4
+    21300010: thief_attack130x120_5
+    21300012: thief_attack130x120_6
+    21300014: thief_attack130x120_7
+    21300016: thief_attack130x120_8
+    21300018: thief_attack130x120_9
+    21300020: thief_attack130x120_10
+    21300022: thief_attack130x120_11
+    21300024: thief_attack130x120_12
+    21300026: thief_attack130x120_13
+    21300028: thief_attack130x120_14
+    21300030: thief_attack130x120_15
+    21300032: thief_attack130x120_16
+    21300034: thief_attack130x120_17
+    21300036: thief_attack130x120_18
+    21300038: thief_attack130x120_19
+    21300040: thief_attack130x120_20
+    21300042: thief_attack130x120_21
+    21300044: thief_attack130x120_22
+    21300046: thief_attack130x120_23
+    21300048: thief_attack130x120_24
+    21300050: thief_attack130x120_25
+    21300052: thief_attack130x120_26
+    21300054: thief_attack130x120_27
+    21300056: thief_attack130x120_28
+    21300058: thief_attack130x120_29
+    21300060: thief_attack130x120_30
+    21300062: thief_attack130x120_31
+    21300064: thief_attack130x120_32
+    21300066: thief_attack130x120_33
+    21300068: thief_attack130x120_34
+    21300070: thief_attack130x120_35
+    21300072: thief_attack130x120_36
+    21300074: thief_attack130x120_37
+    21300076: thief_attack130x120_38
+    21300078: thief_attack130x120_39
+    21300080: thief_attack130x120_40
+    21300082: thief_attack130x120_41
+    21300084: thief_attack130x120_42
+    21300086: thief_attack130x120_43
+    21300088: thief_attack130x120_44
+    21300090: thief_attack130x120_45
+    21300092: thief_attack130x120_46
+    21300094: thief_attack130x120_47
+    21300096: thief_attack130x120_48
+    21300098: thief_attack130x120_49
+    21300100: thief_attack130x120_50
+    21300102: thief_attack130x120_51
+    21300104: thief_attack130x120_52
+    21300106: thief_attack130x120_53
+    21300108: thief_attack130x120_54
+    21300110: thief_attack130x120_55
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: thief_attack130x120_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 840
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 840
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 840
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_3
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 840
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_4
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 840
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_5
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 840
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_6
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 840
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_8
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 720
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_9
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 720
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_10
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 720
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_11
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 720
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_12
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 720
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_13
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 720
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_15
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 600
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_16
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 600
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_17
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 600
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_18
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 600
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_19
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 600
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_20
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 600
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_22
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 480
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_23
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 480
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_24
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 480
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_25
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 480
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_26
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 480
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_27
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 480
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_29
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 360
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_30
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 360
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_31
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 360
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_32
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 360
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_33
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 360
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_34
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 360
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_36
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 240
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_37
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 240
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_38
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 240
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_39
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 240
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_40
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 240
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_41
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 240
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_43
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 120
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_44
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 120
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_45
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 120
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_46
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 120
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_47
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 120
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_48
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 120
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_50
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_51
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 0
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_52
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_53
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 0
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_54
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 0
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thief_attack130x120_55
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 0
+        width: 130
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

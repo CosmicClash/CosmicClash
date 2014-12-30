@@ -14,19 +14,20 @@ public class BattleSceneScript : MonoBehaviour
 	
 	void OnGUI ()
 	{
-		if(TimerScript._On)GUI.Box (new Rect (10, 5, 120, 25), "Time Left: " + TimerScript._GetTimeLeft());
+		//Timer
+		if(DataCoreScript.timeLeft > 0)GUI.Box (new Rect (10, 5, 120, 25), "Time Left: " + DataCoreScript.timeLeft);
 		//Unit Class switching buttons
-		if (GUI.Button (new Rect (10, 40, 120, 25), "Unit 1: " + unit[0]) && unit[0] > 0)
+		if (GUI.Button (new Rect (10, 40, 120, 25), "Ground Troops " + unit[0]) && unit[0] > 0)
 		{
-			spawnType = UnitScript.UnitClass.Unit1;
+			spawnType = UnitScript.UnitClass.GroundTroopUnit;
 		}
-		else if (GUI.Button (new Rect (10, 70, 120, 25), "Unit 2: " + unit[1]) && unit[1] > 0)
+		else if (GUI.Button (new Rect (10, 70, 120, 25), "Rangers " + unit[1]) && unit[1] > 0)
 		{
-			spawnType = UnitScript.UnitClass.Unit2;
+			spawnType = UnitScript.UnitClass.RangerUnit;
 		}
-		else if (GUI.Button (new Rect (10, 100, 120, 25), "Unit 3: " + unit[2]) && unit[2] > 0)
+		else if (GUI.Button (new Rect (10, 100, 120, 25), "Thiefs " + unit[2]) && unit[2] > 0)
 		{
-			spawnType = UnitScript.UnitClass.Unit3;
+			spawnType = UnitScript.UnitClass.ThiefUnit;
 		}
 	}
 
@@ -44,23 +45,37 @@ public class BattleSceneScript : MonoBehaviour
 			break;
 		}
 	}
+	void FixedUpdate ()
+	{
+		if (battleState == BattleState.Main)
+		{
+			_CheckEndConditions();
+		}
+	}
 	
 	private void _Initialize ()
 	{
-		TimerScript._Initialize (15.0f, true);
+		//TimerScript._Initialize (15.0f, true);
+		DataCoreScript.timeLeft = 180;
 		//load attacker's data
 		DataCoreScript._InitializeUsers();
-		spawnType = UnitScript.UnitClass.Unit1;
-		unit.Add (100);
-		unit.Add (100);
-		unit.Add (100);
 
-		//Generate Collision Mesh Data
-		//Call Scan function from the A* path finding script on the DataCoreObject
-		DataCoreScript._GeneratePathFindingMesh();
+		spawnType = UnitScript.UnitClass.GroundTroopUnit;
+		unit.Add (100);
+		unit.Add (100);
+		unit.Add (100);
 
 		//Go to main battle phase
 		battleState = BattleState.Main;
+
+		//Initialize Path Finding
+		DataCoreScript._info.yAxis = Vector3.up; //Assign transform of grid
+		PathFinding.Grid.Build(DataCoreScript._info); //Generates the mesh with the grid info
+//		foreach (Component defender in DataCoreScript._Defenders)
+//		{
+//			Vector2 pos = defender.GetComponent<StructureScript>().pos;
+//			PathFinding.Grid.getNode((int)pos.x, (int)pos.y).enabled = false;
+//		}
 	}
 
 	private void _MainPhase ()
@@ -86,15 +101,35 @@ public class BattleSceneScript : MonoBehaviour
 				{
 					Vector2 pos = MapScript._WorldToMapPos(hit.point);
 					UnitScript.Instance(spawnType ,pos);
-					if(spawnType == UnitScript.UnitClass.Unit1) {unit[0] -= 1;}
-					if(spawnType == UnitScript.UnitClass.Unit2) {unit[1] -= 1;}
-					if(spawnType == UnitScript.UnitClass.Unit3) {unit[2] -= 1;}
+					if(spawnType == UnitScript.UnitClass.GroundTroopUnit) {unit[0] -= 1;}
+					if(spawnType == UnitScript.UnitClass.RangerUnit) {unit[1] -= 1;}
+					if(spawnType == UnitScript.UnitClass.ThiefUnit) {unit[2] -= 1;}
 				}
+			}
+		}//END Mouse down
+	}
+
+	private void _CheckEndConditions ()
+	{
+		if(DataCoreScript.timeLeft <= 0)
+		{
+			//If all buildings are destroyed
+			if(DataCoreScript._Defenders.Count == 0)
+			{
+				//WIN
+				battleState = BattleState.AttackerWin;
+				return;
+			}
+			//If buildings still remain
+			if(DataCoreScript._Defenders.Count > 0)
+			{
+				//LOSE
+				battleState = BattleState.DefenderWin;
+				return;
 			}
 		}
 	}
 }
-
 
 
 

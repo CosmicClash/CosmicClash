@@ -1,0 +1,751 @@
+fileFormatVersion: 2
+guid: b21b58c00d3cb9f4493bf8abcfe85667
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: groundTroop_idle195x165_0
+    21300002: groundTroop_idle195x165_1
+    21300004: groundTroop_idle195x165_2
+    21300006: groundTroop_idle195x165_3
+    21300008: groundTroop_idle195x165_4
+    21300010: groundTroop_idle195x165_5
+    21300012: groundTroop_idle195x165_6
+    21300014: groundTroop_idle195x165_7
+    21300016: groundTroop_idle195x165_8
+    21300018: groundTroop_idle195x165_9
+    21300020: groundTroop_idle195x165_10
+    21300022: groundTroop_idle195x165_11
+    21300024: groundTroop_idle195x165_12
+    21300026: groundTroop_idle195x165_13
+    21300028: groundTroop_idle195x165_14
+    21300030: groundTroop_idle195x165_15
+    21300032: groundTroop_idle195x165_16
+    21300034: groundTroop_idle195x165_17
+    21300036: groundTroop_idle195x165_18
+    21300038: groundTroop_idle195x165_19
+    21300040: groundTroop_idle195x165_20
+    21300042: groundTroop_idle195x165_21
+    21300044: groundTroop_idle195x165_22
+    21300046: groundTroop_idle195x165_23
+    21300048: groundTroop_idle195x165_24
+    21300050: groundTroop_idle195x165_25
+    21300052: groundTroop_idle195x165_26
+    21300054: groundTroop_idle195x165_27
+    21300056: groundTroop_idle195x165_28
+    21300058: groundTroop_idle195x165_29
+    21300060: groundTroop_idle195x165_30
+    21300062: groundTroop_idle195x165_31
+    21300064: groundTroop_idle195x165_32
+    21300066: groundTroop_idle195x165_33
+    21300068: groundTroop_idle195x165_34
+    21300070: groundTroop_idle195x165_35
+    21300072: groundTroop_idle195x165_36
+    21300074: groundTroop_idle195x165_37
+    21300076: groundTroop_idle195x165_38
+    21300078: groundTroop_idle195x165_39
+    21300080: groundTroop_idle195x165_40
+    21300082: groundTroop_idle195x165_41
+    21300084: groundTroop_idle195x165_42
+    21300086: groundTroop_idle195x165_43
+    21300088: groundTroop_idle195x165_44
+    21300090: groundTroop_idle195x165_45
+    21300092: groundTroop_idle195x165_46
+    21300094: groundTroop_idle195x165_47
+    21300096: groundTroop_idle195x165_48
+    21300098: groundTroop_idle195x165_49
+    21300100: groundTroop_idle195x165_50
+    21300102: groundTroop_idle195x165_51
+    21300104: groundTroop_idle195x165_52
+    21300106: groundTroop_idle195x165_53
+    21300108: groundTroop_idle195x165_54
+    21300110: groundTroop_idle195x165_55
+    21300112: groundTroop_idle195x165_56
+    21300114: groundTroop_idle195x165_57
+    21300116: groundTroop_idle195x165_58
+    21300118: groundTroop_idle195x165_59
+    21300120: groundTroop_idle195x165_60
+    21300122: groundTroop_idle195x165_61
+    21300124: groundTroop_idle195x165_62
+    21300126: groundTroop_idle195x165_63
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: groundTroop_idle195x165_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1155
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_1
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 1155
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_2
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 1155
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_3
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 1155
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_4
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 1155
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_5
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 1155
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_6
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1155
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_7
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 1155
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 990
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_9
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 990
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_10
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 990
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_11
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 990
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_12
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 990
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_13
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 990
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_14
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 990
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_15
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 990
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 825
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_17
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 825
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_18
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 825
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_19
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 825
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_20
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 825
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_21
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 825
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_22
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 825
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_23
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 825
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 660
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_25
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 660
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_26
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 660
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_27
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 660
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_28
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 660
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_29
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 660
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_30
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 660
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_31
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 660
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 495
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_33
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 495
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_34
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 495
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_35
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 495
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_36
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 495
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_37
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 495
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_38
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 495
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_39
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 495
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 330
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_41
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 330
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_42
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 330
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_43
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 330
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_44
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 330
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_45
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 330
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_46
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 330
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_47
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 330
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 165
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_49
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 165
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_50
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 165
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_51
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 165
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_52
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 165
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_53
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 165
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_54
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 165
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_55
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 165
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_57
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_58
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_59
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 0
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_60
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 0
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_61
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 0
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_62
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 0
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_idle195x165_63
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 0
+        width: 195
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

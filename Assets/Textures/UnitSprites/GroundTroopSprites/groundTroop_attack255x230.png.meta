@@ -1,0 +1,751 @@
+fileFormatVersion: 2
+guid: b40c3e667accc0a408eca2e3a544d724
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: groundTroop_attack255x230_0
+    21300002: groundTroop_attack255x230_1
+    21300004: groundTroop_attack255x230_2
+    21300006: groundTroop_attack255x230_3
+    21300008: groundTroop_attack255x230_4
+    21300010: groundTroop_attack255x230_5
+    21300012: groundTroop_attack255x230_6
+    21300014: groundTroop_attack255x230_7
+    21300016: groundTroop_attack255x230_8
+    21300018: groundTroop_attack255x230_9
+    21300020: groundTroop_attack255x230_10
+    21300022: groundTroop_attack255x230_11
+    21300024: groundTroop_attack255x230_12
+    21300026: groundTroop_attack255x230_13
+    21300028: groundTroop_attack255x230_14
+    21300030: groundTroop_attack255x230_15
+    21300032: groundTroop_attack255x230_16
+    21300034: groundTroop_attack255x230_17
+    21300036: groundTroop_attack255x230_18
+    21300038: groundTroop_attack255x230_19
+    21300040: groundTroop_attack255x230_20
+    21300042: groundTroop_attack255x230_21
+    21300044: groundTroop_attack255x230_22
+    21300046: groundTroop_attack255x230_23
+    21300048: groundTroop_attack255x230_24
+    21300050: groundTroop_attack255x230_25
+    21300052: groundTroop_attack255x230_26
+    21300054: groundTroop_attack255x230_27
+    21300056: groundTroop_attack255x230_28
+    21300058: groundTroop_attack255x230_29
+    21300060: groundTroop_attack255x230_30
+    21300062: groundTroop_attack255x230_31
+    21300064: groundTroop_attack255x230_32
+    21300066: groundTroop_attack255x230_33
+    21300068: groundTroop_attack255x230_34
+    21300070: groundTroop_attack255x230_35
+    21300072: groundTroop_attack255x230_36
+    21300074: groundTroop_attack255x230_37
+    21300076: groundTroop_attack255x230_38
+    21300078: groundTroop_attack255x230_39
+    21300080: groundTroop_attack255x230_40
+    21300082: groundTroop_attack255x230_41
+    21300084: groundTroop_attack255x230_42
+    21300086: groundTroop_attack255x230_43
+    21300088: groundTroop_attack255x230_44
+    21300090: groundTroop_attack255x230_45
+    21300092: groundTroop_attack255x230_46
+    21300094: groundTroop_attack255x230_47
+    21300096: groundTroop_attack255x230_48
+    21300098: groundTroop_attack255x230_49
+    21300100: groundTroop_attack255x230_50
+    21300102: groundTroop_attack255x230_51
+    21300104: groundTroop_attack255x230_52
+    21300106: groundTroop_attack255x230_53
+    21300108: groundTroop_attack255x230_54
+    21300110: groundTroop_attack255x230_55
+    21300112: groundTroop_attack255x230_56
+    21300114: groundTroop_attack255x230_57
+    21300116: groundTroop_attack255x230_58
+    21300118: groundTroop_attack255x230_59
+    21300120: groundTroop_attack255x230_60
+    21300122: groundTroop_attack255x230_61
+    21300124: groundTroop_attack255x230_62
+    21300126: groundTroop_attack255x230_63
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: groundTroop_attack255x230_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1610
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_1
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1610
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_2
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1610
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_3
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 1610
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_4
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1610
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_5
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 1610
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_6
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1610
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_7
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 1610
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1380
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_9
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1380
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_10
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1380
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_11
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 1380
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_12
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1380
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_13
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 1380
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_14
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1380
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_15
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 1380
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1150
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_17
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1150
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_18
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1150
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_19
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 1150
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_20
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1150
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_21
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 1150
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_22
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1150
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_23
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 1150
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 920
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_25
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 920
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_26
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 920
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_27
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 920
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_28
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 920
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_29
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 920
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_30
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 920
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_31
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 920
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 690
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_33
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 690
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_34
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 690
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_35
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 690
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_36
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 690
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_37
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 690
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_38
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 690
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_39
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 690
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 460
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_41
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 460
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_42
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 460
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_43
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 460
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_44
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 460
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_45
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 460
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_46
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 460
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_47
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 460
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 230
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_49
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 230
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_50
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 230
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_51
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 230
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_52
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 230
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_53
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 230
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_54
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 230
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_55
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 230
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_57
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_58
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 0
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_59
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 0
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_60
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 0
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_61
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 0
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_62
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 0
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: groundTroop_attack255x230_63
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 0
+        width: 255
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

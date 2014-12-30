@@ -5,8 +5,6 @@ Project("{57A26FF9-9967-F949-54F8-04E135E7685F}") = "CosmicClash", "Assembly-CSh
 EndProject
 Project("{57A26FF9-9967-F949-54F8-04E135E7685F}") = "CosmicClash", "Assembly-CSharp.csproj", "{18A6D226-C5CB-9FF8-3675-447165613969}"
 EndProject
-Project("{57A26FF9-9967-F949-54F8-04E135E7685F}") = "CosmicClash", "Assembly-CSharp-Editor.csproj", "{8436E462-027D-CA36-D214-926D6E2516ED}"
-EndProject
 Project("{57A26FF9-9967-F949-54F8-04E135E7685F}") = "CosmicClash", "Assembly-UnityScript-firstpass.unityproj", "{EB3968D5-91E2-13CC-1CC7-330078A1377A}"
 EndProject
 Global
@@ -23,10 +21,6 @@ Global
 		{18A6D226-C5CB-9FF8-3675-447165613969}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18A6D226-C5CB-9FF8-3675-447165613969}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18A6D226-C5CB-9FF8-3675-447165613969}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8436E462-027D-CA36-D214-926D6E2516ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8436E462-027D-CA36-D214-926D6E2516ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8436E462-027D-CA36-D214-926D6E2516ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8436E462-027D-CA36-D214-926D6E2516ED}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EB3968D5-91E2-13CC-1CC7-330078A1377A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EB3968D5-91E2-13CC-1CC7-330078A1377A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB3968D5-91E2-13CC-1CC7-330078A1377A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,7 +29,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																							GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																																																				GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

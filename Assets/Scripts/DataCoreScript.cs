@@ -11,8 +11,18 @@ public static class DataCoreScript
 	public static List<Component>	_Defenders			= new List<Component>();
 	public static List<Component>	_Attackers			= new List<Component>();
 	//public static List<int>		unit;
-	private static bool				_bPathFinderFound	= false;
-	public static GameObject		_PathFinder			= new GameObject();
+
+	//PATH FINDING OBJECT
+	public static PathFinding.GridInfo _info = new PathFinding.GridInfo(40,40);
+
+
+	//Information needed for a battle
+	public static float	percentDestroyed	= 0.0f;
+	public static int	starsAwarded		= 0;
+	public static int	timeLeft			= 0;
+	public static int	goldStolen			= 0;
+	public static int	thoriumStolen		= 0;
+
 
 	/*Debugging*/
 	public static string	debugString		= null;
@@ -23,19 +33,12 @@ public static class DataCoreScript
 		//Bullshit some stuff for now. Learn to load from a file later.
 		UserScript attacker = new UserScript();
 		attacker._LoadAttacker();
-		DataCoreScript._Users.Add(attacker);
+		_Users.Add(attacker);
 
 		//Load Defender Data.
 		//Bullshit some stuff for now. Learn to load from a file later.
 		UserScript defender = new UserScript();
 		defender._LoadDefender();
-		DataCoreScript._Users.Add(defender);
-	}
-
-	//Use to regenerate mesh when a structure is destroyed.
-	public static void _GeneratePathFindingMesh()
-	{
-		if(!DataCoreScript._bPathFinderFound)	DataCoreScript._PathFinder = GameObject.Find("A*");
-		DataCoreScript._PathFinder.GetComponent<AstarPath>().Scan();
+		_Users.Add(defender);
 	}
 }
