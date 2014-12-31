@@ -55,24 +55,25 @@ public class HomeBaseSceneScript : MonoBehaviour
 
 	private void _InputManager ()
 	{
-		//If left mouse is down, create ray and check if it hits stuff within the map bounds
 		if (Input.GetMouseButtonDown (0))
 		{
 			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 			if (Physics.Raycast (ray, out hit))
 			{
+				//Only spawn it if the ray hits within the map bounds
 				float minX = -MapScript.actualMapWidth	/2.0f + MapScript.tileWidth		/2.0f;
 				float minY = -MapScript.actualMapWidth	/2.0f + MapScript.tileWidth		/2.0f;
 				float maxX =  MapScript.actualMapHeight	/2.0f - MapScript.tileHeight	/2.0f;
 				float maxY =  MapScript.actualMapHeight	/2.0f - MapScript.tileHeight	/2.0f;
 				
 				if(hit.transform.position.x >= minX && hit.transform.position.x <= maxX &&
-				   hit.transform.position.z >= minY && hit.transform.position.z <= maxY)
+				   hit.transform.position.z >= minY && hit.transform.position.z <= maxY &&
+				   unit[(int)spawnType] > 0)
 				{
 					Vector2 pos = MapScript._WorldToMapPos(hit.point);
 				}
 			}
-		}
+		}//END Mouse down
 	}//End Input Manager
 
 	
